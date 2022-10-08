@@ -1,12 +1,91 @@
+@use "./sass/index" as *;
+
 // Typography
 .heading-primary {
+  font-size: $headingFontSize;
+  font-weight: 700;
+  line-height: 1.05;
+  color: $greySecondary;
+  letter-spacing: -0.5px;
 }
 
 // Buttons
 .btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: $spacingSm $spacingMd;
+    border-radius: 9px;
+
+    transition: background-color 0.3s;
+  }
+
+  &-full {
+    &:link,
+    &:visited {
+      background-color: $colorPrimary;
+      color: white;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $shadePrimary;
+    }
+  }
+
+  &-outline {
+    &:link,
+    &:visited {
+      background-color: white;
+      color: $greyPrimary;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $tintPrimary;
+      box-shadow: inset 0 0 0 3px white;
+    }
+  }
 }
 
 // Positioning
 .center {
   margin: 0 auto;
+}
+
+// Margins
+
+.mr-sm {
+  margin-right: $spacingSm !important;
+}
+
+// Background
+
+.bg-tint {
+  background-color: $tintPrimary;
+}
+
+.margin {
+  &-bottom {
+    &-md {
+      margin-bottom: $spacingMd;
+    }
+    &-lg {
+      margin-bottom: $spacingLg !important;
+    }
+  }
+
+  &-bottom {
+    &-lg {
+      margin-bottom: $spacingLg !important;
+    }
+  }
+
+  &-right {
+    &-sm {
+      margin-right: $spacingSm !important;
+    }
+  }
 }
