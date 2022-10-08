@@ -1,11 +1,14 @@
 import React from "react";
 import "./HeroSection.scss";
 import image from "../../assets/images/hero.png";
+import DeliveredMeals from "../../components/DeliveredMeals/DeliveredMeals";
+import Button from "../../assets/Button/Button";
+import ButtonOutline from "../../assets/ButtonOutline/ButtonOutline";
 
 function HeroSection() {
   return (
-    <section className="section-hero bg-tint">
-      <div className="hero center">
+    <section className="hero-section bg-tint">
+      <div className="hero-container center">
         <div className="hero-text-box">
           <h1 className="heading-primary margin-bottom-md">
             A healthy meal delivered to your door, every single day!
@@ -13,14 +16,15 @@ function HeroSection() {
           <p className="hero-description margin-bottom-lg ">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional
-            needs. We have delivered 250,000+ meals last year!
+            needs.
           </p>
-          <a href="/" className="btn btn-full margin-right-sm">
+          <Button href="/" className="margin-right-sm">
             Start eating well
-          </a>
-          <a href="/" className="btn btn-outline">
-            Learn More &darr;
-          </a>
+          </Button>
+
+          <ButtonOutline href="/">Learn More &darr;</ButtonOutline>
+
+          <DeliveredMeals />
         </div>
 
         <div className="hero-img-box">

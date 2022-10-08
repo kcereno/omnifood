@@ -9,6 +9,10 @@
   letter-spacing: -0.5px;
 }
 
+.fontColor-shade {
+  color: $shadePrimary;
+}
+
 // Buttons
 .btn {
   &:link,
@@ -18,6 +22,7 @@
     font-size: 2rem;
     padding: $spacingSm $spacingMd;
     border-radius: 9px;
+    font-weight: 500;
 
     transition: background-color 0.3s;
   }
@@ -68,6 +73,12 @@
 }
 
 .margin {
+  &-top {
+    &-xl {
+      margin-top: $spacingXl;
+    }
+  }
+
   &-bottom {
     &-md {
       margin-bottom: $spacingMd;
@@ -88,4 +99,24 @@
       margin-right: $spacingSm !important;
     }
   }
+}
+
+// Displays
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap {
+  &-sm {
+    gap: $spacingSm;
+  }
+}
+
+// Images
+.round {
+  border-radius: 50%;
 }

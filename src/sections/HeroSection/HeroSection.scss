@@ -1,20 +1,25 @@
 .section-hero {
-  padding: 9.6rem 0;
 }
 
 .hero {
-  max-width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
+  &-section {
+    padding: 9.6rem 0;
+  }
 
-.hero-img {
-  width: 100%;
-}
+  &-container {
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+  }
 
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.5;
+  &-img {
+    width: 100%;
+  }
+
+  &-description {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
