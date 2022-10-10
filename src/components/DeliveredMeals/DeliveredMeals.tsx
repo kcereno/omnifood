@@ -18,7 +18,7 @@ function DeliveredMeals() {
         <img src={image6} alt="customer profile pic" />
       </div>
       <p className="delivered-text">
-        <span className="fontColor-shade">250,000+ </span>meals delivered last
+        <span className="text-color-shade">250,000+ </span>meals delivered last
         year!
       </p>
     </div>

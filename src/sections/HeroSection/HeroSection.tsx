@@ -8,7 +8,7 @@ import ButtonOutline from "../../assets/ButtonOutline/ButtonOutline";
 function HeroSection() {
   return (
     <section className="hero-section bg-tint">
-      <div className="hero-container center">
+      <div className="hero-container align-center">
         <div className="hero-text-box">
           <h1 className="heading-primary margin-bottom-md">
             A healthy meal delivered to your door, every single day!

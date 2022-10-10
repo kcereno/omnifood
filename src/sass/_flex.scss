@@ -1,0 +1,83 @@
+@use "./spacing" as *;
+
+.flex {
+  display: flex;
+}
+
+.flex {
+  &-column {
+    flex-direction: column;
+  }
+  &-column-reverse {
+    flex-direction: column-reverse;
+  }
+  &-row-reverse {
+    flex-direction: row-reverse;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+// Alignment
+
+.justify-content {
+  &-start {
+    justify-content: start;
+  }
+  &-end {
+    justify-content: end;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}
+
+.align-content {
+  &-start {
+    align-content: flex-start;
+  }
+  &-end {
+    align-content: flex-end;
+  }
+  &-center {
+    align-content: center;
+  }
+  &-around {
+    align-content: space-around;
+  }
+  &-stretch {
+    align-content: stretch;
+  }
+}
+
+.align-items {
+  &-stretch {
+    align-items: stretch;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-start {
+    align-items: flex-start;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+  &-baseline {
+    align-items: baseline;
+  }
+}
+
+// Gap
+.gap {
+  &-sm {
+    gap: $spacingSm;
+  }
+}

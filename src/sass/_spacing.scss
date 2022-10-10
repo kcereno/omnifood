@@ -1,4 +1,245 @@
+$spacingXs: 0.8rem;
 $spacingSm: 1.6rem;
 $spacingMd: 3.2rem;
 $spacingLg: 4.8rem;
 $spacingXl: 8rem;
+
+.margin {
+  &-x {
+    &-xs {
+      margin-left: $spacingXs;
+      margin-right: $spacingXs;
+    }
+    &-sm {
+      margin-left: $spacingSm;
+      margin-right: $spacingSm;
+    }
+    &-md {
+      margin-left: $spacingMd;
+      margin-right: $spacingMd;
+    }
+    &-lg {
+      margin-left: $spacingLg;
+      margin-right: $spacingLg;
+    }
+    &-xl {
+      margin-left: $spacingXl;
+      margin-right: $spacingXl;
+    }
+  }
+
+  &-y {
+    &-xs {
+      margin-top: $spacingXs;
+      margin-bottom: $spacingXs;
+    }
+    &-sm {
+      margin-top: $spacingSm;
+      margin-bottom: $spacingSm;
+    }
+    &-md {
+      margin-top: $spacingMd;
+      margin-bottom: $spacingMd;
+    }
+    &-lg {
+      margin-top: $spacingLg;
+      margin-bottom: $spacingLg;
+    }
+    &-xl {
+      margin-top: $spacingXl;
+      margin-bottom: $spacingXl;
+    }
+  }
+
+  &-top {
+    &-xs {
+      margin-top: $spacingXs;
+    }
+    &-sm {
+      margin-top: $spacingSm;
+    }
+    &-md {
+      margin-top: $spacingMd;
+    }
+    &-lg {
+      margin-top: $spacingLg;
+    }
+    &-xl {
+      margin-top: $spacingXl;
+    }
+  }
+
+  &-bottom {
+    &-xs {
+      margin-bottom: $spacingXs;
+    }
+    &-sm {
+      margin-bottom: $spacingSm;
+    }
+    &-md {
+      margin-bottom: $spacingMd;
+    }
+    &-lg {
+      margin-bottom: $spacingLg;
+    }
+    &-xl {
+      margin-bottom: $spacingXl;
+    }
+  }
+
+  &-right {
+    &-xs {
+      margin-right: $spacingXs;
+    }
+    &-sm {
+      margin-right: $spacingSm;
+    }
+    &-md {
+      margin-right: $spacingMd;
+    }
+    &-lg {
+      margin-right: $spacingLg;
+    }
+    &-xl {
+      margin-right: $spacingXl;
+    }
+  }
+
+  &-left {
+    &-xs {
+      margin-left: $spacingXs;
+    }
+    &-sm {
+      margin-left: $spacingSm;
+    }
+    &-md {
+      margin-left: $spacingMd;
+    }
+    &-lg {
+      margin-left: $spacingLg;
+    }
+    &-xl {
+      margin-left: $spacingXl;
+    }
+  }
+}
+
+.padding {
+  &-x {
+    &-xs {
+      padding-left: $spacingXs;
+      padding-right: $spacingXs;
+    }
+    &-sm {
+      padding-left: $spacingSm;
+      padding-right: $spacingSm;
+    }
+    &-md {
+      padding-left: $spacingMd;
+      padding-right: $spacingMd;
+    }
+    &-lg {
+      padding-left: $spacingLg;
+      padding-right: $spacingLg;
+    }
+    &-xl {
+      padding-left: $spacingXl;
+      padding-right: $spacingXl;
+    }
+  }
+
+  &-y {
+    &-xs {
+      padding-top: $spacingXs;
+      padding-bottom: $spacingXs;
+    }
+    &-sm {
+      padding-top: $spacingSm;
+      padding-bottom: $spacingSm;
+    }
+    &-md {
+      padding-top: $spacingMd;
+      padding-bottom: $spacingMd;
+    }
+    &-lg {
+      padding-top: $spacingLg;
+      padding-bottom: $spacingLg;
+    }
+    &-xl {
+      padding-top: $spacingXl;
+      padding-bottom: $spacingXl;
+    }
+  }
+
+  &-top {
+    &-xs {
+      padding-top: $spacingXs;
+    }
+    &-sm {
+      padding-top: $spacingSm;
+    }
+    &-md {
+      padding-top: $spacingMd;
+    }
+    &-lg {
+      padding-top: $spacingLg;
+    }
+    &-xl {
+      padding-top: $spacingXl;
+    }
+  }
+
+  &-bottom {
+    &-xs {
+      padding-bottom: $spacingXs;
+    }
+    &-sm {
+      padding-bottom: $spacingSm;
+    }
+    &-md {
+      padding-bottom: $spacingMd;
+    }
+    &-lg {
+      padding-bottom: $spacingLg;
+    }
+    &-xl {
+      padding-bottom: $spacingXl;
+    }
+  }
+
+  &-right {
+    &-xs {
+      padding-right: $spacingXs;
+    }
+    &-sm {
+      padding-right: $spacingSm;
+    }
+    &-md {
+      padding-right: $spacingMd;
+    }
+    &-lg {
+      padding-right: $spacingLg;
+    }
+    &-xl {
+      padding-right: $spacingXl;
+    }
+  }
+
+  &-left {
+    &-xs {
+      padding-left: $spacingXs;
+    }
+    &-sm {
+      padding-left: $spacingSm;
+    }
+    &-md {
+      padding-left: $spacingMd;
+    }
+    &-lg {
+      padding-left: $spacingLg;
+    }
+    &-xl {
+      padding-left: $spacingXl;
+    }
+  }
+}

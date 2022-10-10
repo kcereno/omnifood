@@ -1,0 +1,23 @@
+@use "./colors" as *;
+
+.bg {
+  &-primary {
+    background-color: $colorPrimary;
+  }
+
+  &-secondary {
+    // background-color: $colorPrimary;
+  }
+
+  &-tint {
+    background-color: $tintPrimary;
+  }
+
+  &-black {
+    background-color: black;
+  }
+
+  &-white {
+    background-color: white;
+  }
+}

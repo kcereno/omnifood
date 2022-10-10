@@ -1,5 +1,22 @@
+@use "./colors" as *;
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 $fontPrimary: "Rubik", sans-serif;
 
 $headingFontSize: 5.2rem;
+
+.heading-primary {
+  font-size: $headingFontSize;
+  font-weight: 700;
+  line-height: 1.05;
+  // color: $greySecondary;
+  letter-spacing: -0.5px;
+}
+
+.text {
+  &-color {
+    &-shade {
+      color: $shadePrimary;
+    }
+  }
+}

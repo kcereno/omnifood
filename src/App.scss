@@ -1,18 +1,5 @@
 @use "./sass/index" as *;
 
-// Typography
-.heading-primary {
-  font-size: $headingFontSize;
-  font-weight: 700;
-  line-height: 1.05;
-  color: $greySecondary;
-  letter-spacing: -0.5px;
-}
-
-.fontColor-shade {
-  color: $shadePrimary;
-}
-
 // Buttons
 .btn {
   &:link,
@@ -53,70 +40,4 @@
       box-shadow: inset 0 0 0 3px white;
     }
   }
-}
-
-// Positioning
-.center {
-  margin: 0 auto;
-}
-
-// Margins
-
-.mr-sm {
-  margin-right: $spacingSm !important;
-}
-
-// Background
-
-.bg-tint {
-  background-color: $tintPrimary;
-}
-
-.margin {
-  &-top {
-    &-xl {
-      margin-top: $spacingXl;
-    }
-  }
-
-  &-bottom {
-    &-md {
-      margin-bottom: $spacingMd;
-    }
-    &-lg {
-      margin-bottom: $spacingLg !important;
-    }
-  }
-
-  &-bottom {
-    &-lg {
-      margin-bottom: $spacingLg !important;
-    }
-  }
-
-  &-right {
-    &-sm {
-      margin-right: $spacingSm !important;
-    }
-  }
-}
-
-// Displays
-.flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.gap {
-  &-sm {
-    gap: $spacingSm;
-  }
-}
-
-// Images
-.round {
-  border-radius: 50%;
 }
