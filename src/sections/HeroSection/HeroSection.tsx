@@ -3,7 +3,6 @@ import "./HeroSection.scss";
 import image from "../../assets/images/hero.png";
 import DeliveredMeals from "../../components/DeliveredMeals/DeliveredMeals";
 import Button from "../../assets/Button/Button";
-import ButtonOutline from "../../assets/ButtonOutline/ButtonOutline";
 
 function HeroSection() {
   return (
@@ -22,7 +21,9 @@ function HeroSection() {
             Start eating well
           </Button>
 
-          <ButtonOutline href="/">Learn More &darr;</ButtonOutline>
+          <Button variant="outline" href="/">
+            Learn More &darr;
+          </Button>
 
           <DeliveredMeals />
         </div>
