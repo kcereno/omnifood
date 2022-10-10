@@ -2,12 +2,12 @@ import React from "react";
 import "./HeroSection.scss";
 import image from "../../assets/images/hero.png";
 import DeliveredMeals from "../../components/DeliveredMeals/DeliveredMeals";
-import Button from "../../assets/Button/Button";
+import Button from "../../components/UI/Button/Button";
 
 function HeroSection() {
   return (
     <section className="hero-section bg-tint">
-      <div className="hero-container align-center">
+      <div className="hero-container align-center padding-x-md">
         <div className="hero-text-box">
           <h1 className="heading-primary margin-bottom-md">
             A healthy meal delivered to your door, every single day!
@@ -29,7 +29,7 @@ function HeroSection() {
         </div>
 
         <div className="hero-img-box">
-          <img src={image} className="hero-img" alt="hero " />
+          <img src={image} className="width-100" alt="hero " />
         </div>
       </div>
     </section>
