@@ -3,21 +3,31 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <nav className="navbar">
-      <ul className="navbar-list flex gap-md">
+      <ul className="navbar-list flex align-items-center gap-md">
         <li>
-          <a href="/">Section 1</a>
+          <a className="navbar-link" href="/">
+            Section 1
+          </a>
         </li>
         <li>
-          <a href="/">Section 2</a>
+          <a className="navbar-link" href="/">
+            Section 2
+          </a>
         </li>
         <li>
-          <a href="/">Section 3</a>
+          <a className="navbar-link" href="/">
+            Section 3
+          </a>
         </li>
         <li>
-          <a href="/">Section 4</a>
+          <a className="navbar-link" href="/">
+            Section 4
+          </a>
         </li>
         <li>
-          <a href="/">Section 4</a>
+          <a className="navbar-link navbar-cta bg-primary" href="/">
+            Section 5
+          </a>
         </li>
       </ul>
     </nav>

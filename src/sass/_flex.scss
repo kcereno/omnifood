@@ -1,5 +1,8 @@
 @use "./spacing" as *;
 
+$gapSm: 1.6rem;
+$gapMd: 3.2rem;
+
 .flex {
   display: flex;
 }
@@ -78,9 +81,9 @@
 // Gap
 .gap {
   &-sm {
-    gap: $spacingSm;
+    gap: $gapSm;
   }
   &-md {
-    gap: $spacingMd;
+    gap: $gapMd;
   }
 }

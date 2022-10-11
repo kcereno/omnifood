@@ -3,20 +3,37 @@
 
 $fontPrimary: "Rubik", sans-serif;
 
-$headingFontSize: 5.2rem;
+$fontSizeHeading: 5.2rem;
+
+$fontWeightDefault: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
 
 .heading-primary {
-  font-size: $headingFontSize;
+  font-size: $fontSizeHeading;
   font-weight: 700;
   line-height: 1.05;
   // color: $greySecondary;
   letter-spacing: -0.5px;
 }
 
-.text {
+.font {
   &-color {
     &-shade {
       color: $shadePrimary;
+    }
+  }
+
+  &-weight {
+    &-medium {
+      font-weight: $fontWeightMedium;
+    }
+    &-semibold {
+      font-weight: $fontWeightSemiBold;
+    }
+    &-bold {
+      font-weight: $fontWeightBold;
     }
   }
 }

@@ -4,4 +4,36 @@
   &-list {
     list-style: none;
   }
+
+  &-link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $greySecondary;
+      font-weight: 500;
+      font-size: 1.8rem;
+
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        color: $colorPrimary;
+      }
+    }
+
+    &.navbar-cta {
+      &:link,
+      &:visited {
+        padding: 1.2rem 2.4rem;
+        border-radius: 9px;
+        color: white;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $shadePrimary;
+      }
+    }
+  }
 }
