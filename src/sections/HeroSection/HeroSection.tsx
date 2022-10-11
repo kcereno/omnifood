@@ -7,17 +7,17 @@ import Button from "../../components/UI/Button/Button";
 function HeroSection() {
   return (
     <section className="hero-section bg-tint">
-      <div className="hero-container align-center padding-x-md">
+      <div className="hero-container grid grid-col-2 align-center px-md">
         <div className="hero-text-box">
-          <h1 className="heading-primary margin-bottom-md">
+          <h1 className="heading-primary mb-md">
             A healthy meal delivered to your door, every single day!
           </h1>
-          <p className="hero-description margin-bottom-lg ">
+          <p className="hero-description mb-lg ">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <Button href="/" className="margin-right-sm">
+          <Button href="/" className="mr-sm">
             Start eating well
           </Button>
 
@@ -29,7 +29,7 @@ function HeroSection() {
         </div>
 
         <div className="hero-img-box">
-          <img src={image} className="width-100" alt="hero " />
+          <img src={image} className="w-100" alt="hero " />
         </div>
       </div>
     </section>

@@ -1,21 +1,49 @@
 @use "./colors" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 $fontPrimary: "Rubik", sans-serif;
 
-$fontSizeHeading: 5.2rem;
+$fontSizeHeadingPrimary: 5.2rem;
+$fontSizeHeadingSecondary: 4.4rem;
+
+$fontSizeSubheading: 1.6rem;
 
 $fontWeightDefault: 400;
 $fontWeightMedium: 500;
 $fontWeightSemiBold: 600;
 $fontWeightBold: 700;
 
-.heading-primary {
-  font-size: $fontSizeHeading;
-  font-weight: 700;
-  line-height: 1.05;
-  // color: $greySecondary;
-  letter-spacing: -0.5px;
+.heading {
+  &-primary,
+  &-secondary {
+    font-weight: 700;
+    color: $greySecondary;
+    letter-spacing: -0.5px;
+  }
+
+  &-primary {
+    font-size: $fontSizeHeadingPrimary;
+    line-height: 1.05;
+  }
+
+  &-secondary {
+    font-size: $fontSizeHeadingSecondary;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+  }
+  &-tertiary {
+  }
+}
+
+.subheading {
+  display: block;
+  font-size: $fontSizeSubheading;
+  font-weight: $fontWeightMedium;
+  color: $shadePrimary;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .font {
