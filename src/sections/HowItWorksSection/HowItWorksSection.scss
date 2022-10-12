@@ -1,4 +1,45 @@
 @use "/src/sass/index" as *;
 
-.how {
+.step {
+  &-number {
+    font-size: 8.6rem;
+    font-weight: $fontWeightMedium;
+    color: darkgray;
+    margin-bottom: 1.2rem;
+  }
+
+  &-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  &-img {
+    width: 35%;
+
+    &-box {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      &::before {
+        width: 60%;
+        padding-bottom: 60%;
+        background-color: $tintPrimary;
+        z-index: -2;
+      }
+
+      &::after {
+        width: 45%;
+        padding-bottom: 45%;
+        background-color: $tintSecondary;
+        z-index: -1;
+      }
+    }
+  }
 }

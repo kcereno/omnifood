@@ -5,9 +5,8 @@ $gapMd: 3.2rem;
 
 .flex {
   display: flex;
-}
 
-.flex {
+  // Direction
   &-column {
     flex-direction: column;
   }

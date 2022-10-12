@@ -7,7 +7,7 @@ import Button from "../../components/UI/Button/Button";
 function HeroSection() {
   return (
     <section className="hero-section bg-tint">
-      <div className="hero-container grid grid-col-2 align-center px-md">
+      <div className="hero-container grid grid-col-2 center-x px-md">
         <div className="hero-text-box">
           <h1 className="heading-primary mb-md">
             A healthy meal delivered to your door, every single day!

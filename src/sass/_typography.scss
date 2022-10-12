@@ -6,6 +6,7 @@ $fontPrimary: "Rubik", sans-serif;
 
 $fontSizeHeadingPrimary: 5.2rem;
 $fontSizeHeadingSecondary: 4.4rem;
+$fontSizeTertiary: 3rem;
 
 $fontSizeSubheading: 1.6rem;
 
@@ -16,7 +17,8 @@ $fontWeightBold: 700;
 
 .heading {
   &-primary,
-  &-secondary {
+  &-secondary,
+  &-tertiary {
     font-weight: 700;
     color: $greySecondary;
     letter-spacing: -0.5px;
@@ -33,6 +35,9 @@ $fontWeightBold: 700;
     margin-bottom: 9.6rem;
   }
   &-tertiary {
+    font-size: $fontSizeTertiary;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
   }
 }
 

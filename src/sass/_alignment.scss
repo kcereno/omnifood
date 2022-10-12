@@ -2,9 +2,30 @@
   text-align: center;
 }
 
-.align {
-  &-center {
-    margin-left: auto;
-    margin-right: auto;
+.center {
+  &-x {
+    margin: 0 auto;
+  }
+}
+
+// Using Flexbox
+.flex-center {
+  &-x,
+  &-y,
+  &-xy {
+    display: flex;
+  }
+
+  &-x {
+    justify-content: center;
+  }
+
+  &-y {
+    align-items: center;
+  }
+
+  &-xy {
+    justify-content: center;
+    align-items: center;
   }
 }
