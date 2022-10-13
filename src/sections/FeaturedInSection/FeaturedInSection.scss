@@ -1,0 +1,19 @@
+@use "/src/sass/index" as *;
+
+.featured {
+  &-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: $fontWeightMedium;
+    color: $greyTertiary;
+  }
+
+  &-logos {
+    img {
+      height: 3.2rem;
+      filter: brightness(0);
+      opacity: 50%;
+    }
+  }
+}
