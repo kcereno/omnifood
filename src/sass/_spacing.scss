@@ -1,277 +1,65 @@
-$spacingXs: 0.8rem;
-$spacingSm: 1.6rem;
-$spacingMd: 3.2rem;
-$spacingLg: 4.8rem;
-$spacingXl: 8rem;
+$spacing-sizes: (
+  "xs": 0.8rem,
+  "sm": 1.6rem,
+  "md": 3.2rem,
+  "lg": 4.84rem,
+  "xl": 8rem,
+);
 
-.m {
-  &-xs {
-    margin: $spacingXs;
-  }
-  &-sm {
-    margin: $spacingSm;
-  }
-  &-md {
-    margin: $spacingMd;
-  }
-  &-lg {
-    margin: $spacingLg;
-  }
-  &-xl {
-    margin: $spacingXl;
-  }
+@each $size, $value in $spacing-sizes {
+  .m {
+    &-#{$size} {
+      margin: $value;
+    }
 
-  &x {
-    &-xs {
-      margin-left: $spacingXs;
-      margin-right: $spacingXs;
+    &y-#{$size} {
+      margin: $value 0;
     }
-    &-sm {
-      margin-left: $spacingSm;
-      margin-right: $spacingSm;
-    }
-    &-md {
-      margin-left: $spacingMd;
-      margin-right: $spacingMd;
-    }
-    &-lg {
-      margin-left: $spacingLg;
-      margin-right: $spacingLg;
-    }
-    &-xl {
-      margin-left: $spacingXl;
-      margin-right: $spacingXl;
-    }
-  }
 
-  &y {
-    &-xs {
-      margin-top: $spacingXs;
-      margin-bottom: $spacingXs;
+    &x-#{$size} {
+      margin: 0 $value;
     }
-    &-sm {
-      margin-top: $spacingSm;
-      margin-bottom: $spacingSm;
-    }
-    &-md {
-      margin-top: $spacingMd;
-      margin-bottom: $spacingMd;
-    }
-    &-lg {
-      margin-top: $spacingLg;
-      margin-bottom: $spacingLg;
-    }
-    &-xl {
-      margin-top: $spacingXl;
-      margin-bottom: $spacingXl;
-    }
-  }
 
-  &t {
-    &-xs {
-      margin-top: $spacingXs;
+    &t-#{$size} {
+      margin-top: $value;
     }
-    &-sm {
-      margin-top: $spacingSm;
+    &b-#{$size} {
+      margin-bottom: $value;
     }
-    &-md {
-      margin-top: $spacingMd;
+    &l-#{$size} {
+      margin-left: $value;
     }
-    &-lg {
-      margin-top: $spacingLg;
-    }
-    &-xl {
-      margin-top: $spacingXl;
-    }
-  }
-
-  &b {
-    &-xs {
-      margin-bottom: $spacingXs;
-    }
-    &-sm {
-      margin-bottom: $spacingSm;
-    }
-    &-md {
-      margin-bottom: $spacingMd;
-    }
-    &-lg {
-      margin-bottom: $spacingLg;
-    }
-    &-xl {
-      margin-bottom: $spacingXl;
-    }
-  }
-
-  &r {
-    &-xs {
-      margin-right: $spacingXs;
-    }
-    &-sm {
-      margin-right: $spacingSm;
-    }
-    &-md {
-      margin-right: $spacingMd;
-    }
-    &-lg {
-      margin-right: $spacingLg;
-    }
-    &-xl {
-      margin-right: $spacingXl;
-    }
-  }
-
-  &l {
-    &-xs {
-      margin-left: $spacingXs;
-    }
-    &-sm {
-      margin-left: $spacingSm;
-    }
-    &-md {
-      margin-left: $spacingMd;
-    }
-    &-lg {
-      margin-left: $spacingLg;
-    }
-    &-xl {
-      margin-left: $spacingXl;
+    &r-#{$size} {
+      margin-right: $value;
     }
   }
 }
 
-.p {
-  &-xs {
-    padding: $spacingXs;
-  }
-  &-sm {
-    padding: $spacingSm;
-  }
-  &-md {
-    padding: $spacingMd;
-  }
-  &-lg {
-    padding: $spacingLg;
-  }
-  &-xl {
-    padding: $spacingXl;
-  }
+@each $size, $value in $spacing-sizes {
+  .p {
+    &-#{$size} {
+      padding: $value;
+    }
 
-  &x {
-    &-xs {
-      padding-left: $spacingXs;
-      padding-right: $spacingXs;
+    &y-#{$size} {
+      padding: $value 0;
     }
-    &-sm {
-      padding-left: $spacingSm;
-      padding-right: $spacingSm;
-    }
-    &-md {
-      padding-left: $spacingMd;
-      padding-right: $spacingMd;
-    }
-    &-lg {
-      padding-left: $spacingLg;
-      padding-right: $spacingLg;
-    }
-    &-xl {
-      padding-left: $spacingXl;
-      padding-right: $spacingXl;
-    }
-  }
 
-  &y {
-    &-xs {
-      padding-top: $spacingXs;
-      padding-bottom: $spacingXs;
+    &x-#{$size} {
+      padding: 0 $value;
     }
-    &-sm {
-      padding-top: $spacingSm;
-      padding-bottom: $spacingSm;
-    }
-    &-md {
-      padding-top: $spacingMd;
-      padding-bottom: $spacingMd;
-    }
-    &-lg {
-      padding-top: $spacingLg;
-      padding-bottom: $spacingLg;
-    }
-    &-xl {
-      padding-top: $spacingXl;
-      padding-bottom: $spacingXl;
-    }
-  }
 
-  &t {
-    &-xs {
-      padding-top: $spacingXs;
+    &t-#{$size} {
+      padding-top: $value;
     }
-    &-sm {
-      padding-top: $spacingSm;
+    &b-#{$size} {
+      padding-bottom: $value;
     }
-    &-md {
-      padding-top: $spacingMd;
+    &l-#{$size} {
+      padding-left: $value;
     }
-    &-lg {
-      padding-top: $spacingLg;
-    }
-    &-xl {
-      padding-top: $spacingXl;
-    }
-  }
-
-  &b {
-    &-xs {
-      padding-bottom: $spacingXs;
-    }
-    &-sm {
-      padding-bottom: $spacingSm;
-    }
-    &-md {
-      padding-bottom: $spacingMd;
-    }
-    &-lg {
-      padding-bottom: $spacingLg;
-    }
-    &-xl {
-      padding-bottom: $spacingXl;
-    }
-  }
-
-  &r {
-    &-xs {
-      padding-right: $spacingXs;
-    }
-    &-sm {
-      padding-right: $spacingSm;
-    }
-    &-md {
-      padding-right: $spacingMd;
-    }
-    &-lg {
-      padding-right: $spacingLg;
-    }
-    &-xl {
-      padding-right: $spacingXl;
-    }
-  }
-
-  &l {
-    &-xs {
-      padding-left: $spacingXs;
-    }
-    &-sm {
-      padding-left: $spacingSm;
-    }
-    &-md {
-      padding-left: $spacingMd;
-    }
-    &-lg {
-      padding-left: $spacingLg;
-    }
-    &-xl {
-      padding-left: $spacingXl;
+    &r-#{$size} {
+      padding-right: $value;
     }
   }
 }

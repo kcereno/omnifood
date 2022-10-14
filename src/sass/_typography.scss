@@ -65,7 +65,7 @@ $font-weights: (
   background-color: #51cf66;
   color: $greySecondary;
   border-radius: 100px;
-  font-weight: map-get($map: font-weights, $key: bold);
+  font-weight: map-get($map: $font-weights, $key: bold);
 }
 
 .font {
