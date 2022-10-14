@@ -5,6 +5,22 @@ $spacingLg: 4.8rem;
 $spacingXl: 8rem;
 
 .m {
+  &-xs {
+    margin: $spacingXs;
+  }
+  &-sm {
+    margin: $spacingSm;
+  }
+  &-md {
+    margin: $spacingMd;
+  }
+  &-lg {
+    margin: $spacingLg;
+  }
+  &-xl {
+    margin: $spacingXl;
+  }
+
   &x {
     &-xs {
       margin-left: $spacingXs;
@@ -125,6 +141,22 @@ $spacingXl: 8rem;
 }
 
 .p {
+  &-xs {
+    padding: $spacingXs;
+  }
+  &-sm {
+    padding: $spacingSm;
+  }
+  &-md {
+    padding: $spacingMd;
+  }
+  &-lg {
+    padding: $spacingLg;
+  }
+  &-xl {
+    padding: $spacingXl;
+  }
+
   &x {
     &-xs {
       padding-left: $spacingXs;
