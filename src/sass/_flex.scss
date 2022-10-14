@@ -1,5 +1,17 @@
 @use "./spacing" as *;
 
+$gap-sizes: (
+  "sm": 1.6rem,
+  "md": 3.2rem,
+);
+
+$flex-directions: (
+  "column": column,
+  "column-reverse": column-reverse,
+  "row-reverse": row-reverse,
+  "wrap": wrap,
+);
+
 $gapSm: 1.6rem;
 $gapMd: 3.2rem;
 
@@ -7,18 +19,24 @@ $gapMd: 3.2rem;
   display: flex;
 
   // Direction
-  &-column {
-    flex-direction: column;
+  @each $direction, $value in $flex-directions {
+    &-#{$direction} {
+      flex-direction: $value;
+    }
   }
-  &-column-reverse {
-    flex-direction: column-reverse;
-  }
-  &-row-reverse {
-    flex-direction: row-reverse;
-  }
-  &-wrap {
-    flex-wrap: wrap;
-  }
+
+  // &-column {
+  //   flex-direction: column;
+  // }
+  // &-column-reverse {
+  //   flex-direction: column-reverse;
+  // }
+  // &-row-reverse {
+  //   flex-direction: row-reverse;
+  // }
+  // &-wrap {
+  //   flex-wrap: wrap;
+  // }
 }
 
 // Alignment
@@ -78,11 +96,11 @@ $gapMd: 3.2rem;
 }
 
 // Gap
-.gap {
-  &-sm {
-    gap: $gapSm;
-  }
-  &-md {
-    gap: $gapMd;
+
+@each $size, $value in $gap-sizes {
+  .gap {
+    &-#{$size} {
+      gap: $value;
+    }
   }
 }
