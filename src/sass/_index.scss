@@ -1,9 +1,9 @@
-@forward "./_typography.scss";
-@forward "./_spacing.scss";
+@forward "./typography/classes";
+@forward "./spacing/classes";
 
 @forward "./grid/classes";
 
-@forward "./aligment/classes";
+@forward "./alignment/classes";
 @forward "./backgrounds/classes";
 
 @forward "./UI/classes";

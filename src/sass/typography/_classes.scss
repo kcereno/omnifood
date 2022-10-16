@@ -1,0 +1,79 @@
+@use "../colors/variables" as color;
+@use "./variables" as *;
+@use "./mixins" as *;
+
+$fontSizeSubheading: 1.6rem;
+$fontSizeTertiary: 3rem;
+$fontSizeHeadingSecondary: 4.4rem;
+$fontSizeHeadingPrimary: 5.2rem;
+
+$fontWeightDefault: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+//  Mixins
+
+// Classes
+.heading {
+  &-primary,
+  &-secondary,
+  &-tertiary {
+    font-weight: map-get($font-weights, bold);
+    color: color.$grey-secondary;
+    letter-spacing: -0.5px;
+  }
+
+  &-primary {
+    @include heading-style(map-get($font-sizes, xl), 1.05, null);
+  }
+
+  &-secondary {
+    @include heading-style(map-get($font-sizes, lg), 1.2, 9.6rem);
+  }
+
+  &-tertiary {
+    @include heading-style(map-get($font-sizes, med), 1.2, 3.2rem);
+  }
+}
+
+.subheading {
+  display: block;
+  font-size: $fontSizeSubheading;
+  font-weight: $fontWeightMedium;
+  color: color.$shade-primary;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  color: color.$grey-secondary;
+  border-radius: 100px;
+  font-weight: map-get($map: $font-weights, $key: bold);
+}
+
+.font {
+  &-color {
+    &-shade {
+      color: color.$shade-primary;
+    }
+  }
+
+  &-weight {
+    &-medium {
+      font-weight: $fontWeightMedium;
+    }
+    &-semibold {
+      font-weight: $fontWeightSemiBold;
+    }
+    &-bold {
+      font-weight: $fontWeightBold;
+    }
+  }
+}

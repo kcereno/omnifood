@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+$font-families: (
+  "primary": (
+    "Rubik",
+    sans-serif,
+  ),
+);
+
+$font-sizes: (
+  "sm": 1.6rem,
+  "med": 3rem,
+  "lg": 4.4rem,
+  "xl": 5.2rem,
+);
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+);

@@ -1,4 +1,4 @@
-@use "./sass/_index.scss" as *;
+@use "./sass/typography/variables" as font;
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: $fontPrimary;
+  font-family: map-get($map: font.$font-families, $key: "primary");
   color: #555;
   font-weight: 400;
   line-height: 1;
