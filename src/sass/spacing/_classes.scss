@@ -36,11 +36,13 @@
     }
 
     &y-#{$size} {
-      padding: $value 0;
+      padding-top: $value;
+      padding-bottom: $value;
     }
 
     &x-#{$size} {
-      padding: 0 $value;
+      padding-left: $value;
+      padding-right: $value;
     }
 
     &t-#{$size} {

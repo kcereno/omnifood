@@ -2,19 +2,6 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-$fontSizeSubheading: 1.6rem;
-$fontSizeTertiary: 3rem;
-$fontSizeHeadingSecondary: 4.4rem;
-$fontSizeHeadingPrimary: 5.2rem;
-
-$fontWeightDefault: 400;
-$fontWeightMedium: 500;
-$fontWeightSemiBold: 600;
-$fontWeightBold: 700;
-
-//  Mixins
-
-// Classes
 .heading {
   &-primary,
   &-secondary,
@@ -39,8 +26,8 @@ $fontWeightBold: 700;
 
 .subheading {
   display: block;
-  font-size: $fontSizeSubheading;
-  font-weight: $fontWeightMedium;
+  font-size: map-get($map: $font-sizes, $key: med);
+  font-weight: map-get($map: $font-weights, $key: medium);
   color: color.$shade-primary;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
@@ -50,30 +37,24 @@ $fontWeightBold: 700;
 .tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
-  font-size: 1.2rem;
+  font-size: map-get($map: $font-sizes, $key: xs);
   text-transform: uppercase;
-  background-color: #51cf66;
+
   color: color.$grey-secondary;
   border-radius: 100px;
   font-weight: map-get($map: $font-weights, $key: bold);
+
+  @each $category, $color in $tag-colors {
+    &-#{$category} {
+      background-color: $color;
+    }
+  }
 }
 
 .font {
   &-color {
     &-shade {
       color: color.$shade-primary;
-    }
-  }
-
-  &-weight {
-    &-medium {
-      font-weight: $fontWeightMedium;
-    }
-    &-semibold {
-      font-weight: $fontWeightSemiBold;
-    }
-    &-bold {
-      font-weight: $fontWeightBold;
     }
   }
 }

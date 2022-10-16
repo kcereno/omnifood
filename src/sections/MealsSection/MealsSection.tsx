@@ -2,7 +2,6 @@ import MealCard from "../../components/MealCard/MealCard";
 import "./MealsSection.scss";
 import meal1 from "../../assets/images/meals/meal-1.jpg";
 import meal2 from "../../assets/images/meals/meal-2.jpg";
-import image from "/src/assets/images/app/app-screen-1.png";
 
 function MealsSection() {
   return (
@@ -19,7 +18,7 @@ function MealsSection() {
           image={{ src: meal1, alt: "meal" }}
           data={{
             title: "Japanese Gyozas",
-            category: "Vegetarian",
+            categories: ["Vegetarian"],
             calories: "650",
             score: "74",
             rating: "4.9",
@@ -30,7 +29,7 @@ function MealsSection() {
           image={{ src: meal2, alt: "meal" }}
           data={{
             title: "Avocado Salad",
-            category: "Vegetarian",
+            categories: ["Vegan", "Paleo"],
             calories: "650",
             score: "74",
             rating: "4.9",

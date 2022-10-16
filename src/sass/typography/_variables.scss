@@ -8,6 +8,7 @@ $font-families: (
 );
 
 $font-sizes: (
+  "xs": 1.2rem,
   "sm": 1.6rem,
   "med": 3rem,
   "lg": 4.4rem,
@@ -19,4 +20,10 @@ $font-weights: (
   "medium": 500,
   "semibold": 600,
   "bold": 700,
+);
+
+$tag-colors: (
+  "vegetarian": #51cf66,
+  "vegan": #94d82d,
+  "paleo": #ffd43b,
 );

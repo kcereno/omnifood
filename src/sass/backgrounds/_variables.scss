@@ -1,4 +1,6 @@
+@use "../colors/variables" as color;
+
 $bg-colors: (
-  "primary": #e67e22,
-  "tint": #fdf2e9,
+  "primary": color.$primary,
+  "tint": color.$tint-primary,
 );

@@ -9,7 +9,7 @@ interface Props {
   };
   data: {
     title: string;
-    category: string;
+    categories: string[];
     calories: string;
     score: string;
     rating: string;
@@ -19,31 +19,35 @@ interface Props {
 
 function MealCard({
   image: { src, alt },
-  data: { title, category, calories, score, reviews, rating },
+  data: { title, categories, calories, score, reviews, rating },
 }: Props) {
   return (
-    <div className="meal pb-xl">
+    <div className="meal-card pb-xl">
       <img src={src} className="w-100" alt={alt} />
       <div className="pt-md px-lg pb-lg">
-        <div className="meal-tags mb-xs">
-          <span className="tag">{category}</span>
+        <div className="flex gap-xs mb-xs">
+          {categories.map((category) => (
+            <span className={`tag tag-${category.toLowerCase()} `}>
+              {category}
+            </span>
+          ))}
         </div>
-        <p className="meal-title mb-md">{title}</p>
-        <ul className="meal-attributes flex flex-column gap-sm">
+        <p className="meal-card-title mb-md">{title}</p>
+        <ul className="meal-card-attributes flex flex-column gap-sm">
           <li>
-            <HiOutlineFire className="meal-icon" />
+            <HiOutlineFire className="meal-card-icon" />
             <span>
               <strong>{calories}</strong> calories
             </span>
           </li>
           <li>
-            <BiRestaurant className="meal-icon" />
+            <BiRestaurant className="meal-card-icon" />
             <span>
               Nutriscore &reg; <strong>{score}</strong>{" "}
             </span>
           </li>
           <li>
-            <HiOutlineStar className="meal-icon" />
+            <HiOutlineStar className="meal-card-icon" />
             <span>
               <strong>{rating}</strong> ratings <strong>({reviews})</strong>
             </span>
