@@ -1,4 +1,4 @@
-@use "/src/sass/index" as *;
+@use "/src/sass/colors/variables" as color;
 
 .navbar {
   &-list {
@@ -10,7 +10,7 @@
     &:visited {
       display: inline-block;
       text-decoration: none;
-      color: $greySecondary;
+      color: color.$grey-secondary;
       font-weight: 500;
       font-size: 1.8rem;
 
@@ -18,7 +18,7 @@
 
       &:hover,
       &:active {
-        color: $colorPrimary;
+        color: color.$primary;
       }
     }
 
@@ -32,7 +32,7 @@
 
       &:hover,
       &:active {
-        background-color: $shadePrimary;
+        background-color: color.$shade-primary;
       }
     }
   }

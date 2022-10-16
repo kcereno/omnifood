@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+.grid {
+  display: grid;
+  column-gap: map-get($map: $grid-gaps, $key: "sm");
+  row-gap: map-get($map: $grid-gaps, $key: "md");
+
+  // * Grid Columns
+  @each $amount in $grid-columns {
+    &-col-#{$amount} {
+      grid-template-columns: repeat($amount, 1fr);
+    }
+  }
+
+  // * Alignment
+  &-center {
+    &-y {
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use "./variables" as *;
+
+.flex {
+  display: flex;
+
+  @each $direction, $value in $flex-directions {
+    &-#{$direction} {
+      flex-direction: $value;
+    }
+  }
+}
+
+@each $option, $value in $justify-content-options {
+  .justify-content {
+    &-#{$option} {
+      justify-content: $value;
+    }
+  }
+}
+
+@each $option, $value in $align-content-options {
+  .align-content {
+    &-#{$option} {
+      align-content: $value;
+    }
+  }
+}
+
+@each $option, $value in $align-items-options {
+  .align-items {
+    &-#{$option} {
+      align-items: $value;
+    }
+  }
+}
+
+// Gap
+
+@each $size, $value in $gap-sizes {
+  .gap {
+    &-#{$size} {
+      gap: $value;
+    }
+  }
+}

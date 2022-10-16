@@ -1,6 +1,3 @@
-@use "./spacing" as *;
-
-// Variables
 $gap-sizes: (
   "sm": 1.6rem,
   "md": 3.2rem,
@@ -39,41 +36,3 @@ $align-items-options: (
 
 $gapSm: 1.6rem;
 $gapMd: 3.2rem;
-
-// Classes
-.flex {
-  display: flex;
-
-  @each $direction, $value in $flex-directions {
-    &-#{$direction} {
-      flex-direction: $value;
-    }
-  }
-
-  @each $option, $value in $justify-content-options {
-    &-#{$option} {
-      justify-content: $value;
-    }
-  }
-
-  @each $option, $value in $align-content-options {
-    &-#{$option} {
-      align-content: $value;
-    }
-  }
-  @each $option, $value in $align-items-options {
-    &-#{$option} {
-      align-items: $value;
-    }
-  }
-}
-
-// Gap
-
-@each $size, $value in $gap-sizes {
-  .gap {
-    &-#{$size} {
-      gap: $value;
-    }
-  }
-}

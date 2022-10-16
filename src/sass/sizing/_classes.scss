@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+@each $size in $sizes {
+  .w {
+    &-#{$size} {
+      width: calc($size * 1%);
+    }
+  }
+  .h {
+    &-#{$size} {
+      height: calc($size * 1%);
+    }
+  }
+
+  .m {
+    &w {
+      &-#{$size} {
+        max-width: calc($size * 1%);
+      }
+    }
+    &h {
+      &-#{$size} {
+        max-height: calc($size * 1%);
+      }
+    }
+  }
+}

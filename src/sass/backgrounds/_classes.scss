@@ -1,9 +1,4 @@
-@use "./colors" as *;
-
-$bg-colors: (
-  "primary": #e67e22,
-  "tint": #fdf2e9,
-);
+@use "./variables" as *;
 
 @each $color, $value in $bg-colors {
   .bg {

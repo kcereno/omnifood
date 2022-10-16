@@ -1,12 +1,12 @@
-@use "/src/sass/index" as *;
+@use "/src/sass/colors/variables" as color;
 
 .featured {
   &-heading {
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.75px;
-    font-weight: $fontWeightMedium;
-    color: $greyTertiary;
+    font-weight: 500;
+    color: color.$grey-tertiary;
   }
 
   &-logos {

@@ -1,4 +1,4 @@
-@use "./colors" as *;
+@use "./colors/variables" as color;
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
@@ -21,12 +21,20 @@ $font-weights: (
   "bold": 700,
 );
 
+//  Mixins
+@mixin heading-style($font-size, $line-height, $margin-bottom) {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+}
+
+// Classes
 .heading {
   &-primary,
   &-secondary,
   &-tertiary {
     font-weight: 700;
-    color: $greySecondary;
+    color: color.$grey-secondary;
     letter-spacing: -0.5px;
   }
 
@@ -51,7 +59,7 @@ $font-weights: (
   display: block;
   font-size: $fontSizeSubheading;
   font-weight: $fontWeightMedium;
-  color: $shadePrimary;
+  color: color.$shade-primary;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
@@ -63,7 +71,7 @@ $font-weights: (
   font-size: 1.2rem;
   text-transform: uppercase;
   background-color: #51cf66;
-  color: $greySecondary;
+  color: color.$grey-secondary;
   border-radius: 100px;
   font-weight: map-get($map: $font-weights, $key: bold);
 }
@@ -71,7 +79,7 @@ $font-weights: (
 .font {
   &-color {
     &-shade {
-      color: $shadePrimary;
+      color: color.$shade-primary;
     }
   }
 

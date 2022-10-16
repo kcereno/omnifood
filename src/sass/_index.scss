@@ -1,9 +1,13 @@
 @forward "./_typography.scss";
 @forward "./_spacing.scss";
-@forward "./alignment.scss";
-@forward "./colors.scss";
-@forward "./backgrounds.scss";
-@forward "./sizing.scss";
-@forward "./flex.scss";
-@forward "./grid.scss";
-@forward "./containers.scss";
+
+@forward "./grid/classes";
+
+@forward "./aligment/classes";
+@forward "./backgrounds/classes";
+
+@forward "./UI/classes";
+@forward "./flex/classes";
+@forward "./sizing/classes";
+
+@forward "./colors/variables";

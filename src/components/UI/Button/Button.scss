@@ -1,4 +1,4 @@
-@use "/src/sass/index" as *;
+@use "/src/sass/colors/variables" as color;
 
 // Buttons
 .btn {
@@ -17,13 +17,13 @@
   &-full {
     &:link,
     &:visited {
-      background-color: $colorPrimary;
+      background-color: color.$primary;
       color: white;
     }
 
     &:hover,
     &:active {
-      background-color: $shadePrimary;
+      background-color: color.$shade-primary;
     }
   }
 
@@ -31,12 +31,12 @@
     &:link,
     &:visited {
       background-color: white;
-      color: $greyPrimary;
+      color: color.$grey-primary;
     }
 
     &:hover,
     &:active {
-      background-color: $tintPrimary;
+      background-color: color.$tiny-primary;
       box-shadow: inset 0 0 0 3px white;
     }
   }

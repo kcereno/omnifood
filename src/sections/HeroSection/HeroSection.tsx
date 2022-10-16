@@ -1,8 +1,7 @@
-import React from "react";
-import "./HeroSection.scss";
 import image from "../../assets/images/hero.png";
 import DeliveredMeals from "../../components/DeliveredMeals/DeliveredMeals";
 import Button from "../../components/UI/Button/Button";
+import "./HeroSection.scss";
 
 function HeroSection() {
   return (
