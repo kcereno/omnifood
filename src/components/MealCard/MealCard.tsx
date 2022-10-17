@@ -22,7 +22,7 @@ function MealCard({
   data: { title, categories, calories, score, reviews, rating },
 }: Props) {
   return (
-    <div className="meal-card pb-xl">
+    <div className="meal-card">
       <img src={src} className="w-100" alt={alt} />
       <div className="pt-md px-lg pb-lg">
         <div className="flex gap-xs mb-xs">

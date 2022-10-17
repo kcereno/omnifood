@@ -20,13 +20,13 @@
   }
 
   &-tertiary {
-    @include heading-style(map-get($font-sizes, med), 1.2, 3.2rem);
+    @include heading-style(map-get($font-sizes, md), 1.2, 3.2rem);
   }
 }
 
 .subheading {
   display: block;
-  font-size: map-get($map: $font-sizes, $key: med);
+  font-size: map-get($map: $font-sizes, $key: sm);
   font-weight: map-get($map: $font-weights, $key: medium);
   color: color.$shade-primary;
   text-transform: uppercase;
@@ -55,6 +55,14 @@
   &-color {
     &-shade {
       color: color.$shade-primary;
+    }
+  }
+
+  @each $size, $value in $font-sizes {
+    &-size {
+      &-#{$size} {
+        font-size: $value;
+      }
     }
   }
 }
