@@ -1,4 +1,7 @@
 @forward "./typography/classes";
+@forward "./typography/mixins";
+@forward "./typography/variables";
+
 @forward "./spacing/classes";
 @forward "./grid/classes";
 @forward "./alignment/classes";
@@ -7,5 +10,6 @@
 @forward "./flex/classes";
 @forward "./sizing/classes";
 @forward "./global/classes";
+@forward "./images/classes";
 
 @forward "./colors/variables";

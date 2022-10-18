@@ -53,7 +53,7 @@ function MealsSection() {
         />
       </div>
 
-      <div className="container text-center font-size-sm pb-xl">
+      <div className="container text-center font-size-sm pb-lg">
         <a href="/" className="link">
           See All Recipes &rarr;
         </a>

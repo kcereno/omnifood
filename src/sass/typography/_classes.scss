@@ -7,7 +7,7 @@
   &-secondary,
   &-tertiary {
     font-weight: map-get($font-weights, bold);
-    color: color.$grey-secondary;
+    color: color.$gray-1;
     letter-spacing: -0.5px;
   }
 
@@ -28,7 +28,7 @@
   display: block;
   font-size: map-get($map: $font-sizes, $key: sm);
   font-weight: map-get($map: $font-weights, $key: medium);
-  color: color.$shade-primary;
+  color: color.$primary-shade-1;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
@@ -39,8 +39,7 @@
   padding: 0.4rem 0.8rem;
   font-size: map-get($map: $font-sizes, $key: xs);
   text-transform: uppercase;
-
-  color: color.$grey-secondary;
+  color: color.$gray-2;
   border-radius: 100px;
   font-weight: map-get($map: $font-weights, $key: bold);
 
@@ -54,7 +53,7 @@
 .font {
   &-color {
     &-shade {
-      color: color.$shade-primary;
+      color: color.$primary-shade-1;
     }
   }
 
