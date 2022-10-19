@@ -1,0 +1,54 @@
+@use "/src/sass/colors/variables" as color;
+@use "/src/sass/typography/variables" as font;
+
+.pricing-plan {
+  border-radius: 11px;
+}
+
+.plan {
+  &-name {
+    color: color.$primary-shade-1;
+    font-weight: map-get(font.$font-weights, semibold);
+    font-size: map-get(font.$font-sizes, md);
+    text-transform: uppercase;
+    line-height: 0.8;
+  }
+  &-price {
+    font-size: map-get(font.$font-sizes, xxl);
+    font-weight: map-get(font.$font-weights, semibold);
+    color: color.$gray-1;
+
+    span {
+      font-size: map-get(font.$font-sizes, xl);
+      font-weight: map-get(font.$font-weights, medium);
+    }
+  }
+  &-text {
+    font-size: map-get(font.$font-sizes, sm);
+    line-height: 1.6;
+    color: color.$gray-2;
+  }
+}
+
+.starter {
+  justify-self: end;
+  border: 2px solid color.$primary-tint-1;
+  padding: 6.2rem;
+}
+
+.complete {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    top: 4%;
+    right: -8%;
+    content: "Best value";
+    position: absolute;
+    text-transform: uppercase;
+    font-size: map-get(font.$font-sizes, xs);
+    font-weight: map-get(font.$font-weights, bold);
+    background-color: #ffd43b;
+    padding: 0.8rem 3.2rem;
+    transform: rotate(45deg);
+  }
+}

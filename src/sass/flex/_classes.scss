@@ -3,9 +3,19 @@
 .flex {
   display: flex;
 
+  //  * Directions
   @each $direction, $value in $flex-directions {
     &-#{$direction} {
       flex-direction: $value;
+    }
+  }
+
+  // * Gaps
+  @each $size, $value in $gap-sizes {
+    &-gap {
+      &-#{$size} {
+        gap: $value;
+      }
     }
   }
 }
@@ -30,15 +40,6 @@
   .align-items {
     &-#{$option} {
       align-items: $value;
-    }
-  }
-}
-
-// Gap
-@each $size, $value in $gap-sizes {
-  .gap {
-    &-#{$size} {
-      gap: $value;
     }
   }
 }

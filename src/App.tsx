@@ -4,6 +4,7 @@ import HeaderSection from "./sections/HeaderSection/HeaderSection";
 import HeroSection from "./sections/HeroSection/HeroSection";
 import HowItWorksSection from "./sections/HowItWorksSection/HowItWorksSection";
 import MealsSection from "./sections/MealsSection/MealsSection";
+import PricingFeatureSection from "./sections/PricingFeatureSection/PricingFeatureSection";
 import TestimonialsSection from "./sections/TestimonialsSection/TestimonialsSection";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <HowItWorksSection />
         <MealsSection />
         <TestimonialsSection />
+        <PricingFeatureSection />
       </main>
     </div>
   );

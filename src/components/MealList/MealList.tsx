@@ -9,9 +9,9 @@ function MealList({ types }: Props) {
   return (
     <div className="diets">
       <h3 className="heading-tertiary mb-xs">Works with any diet:</h3>
-      <ul className="list flex flex-column gap-xs">
+      <ul className="list flex flex-column flex-gap-xs">
         {types.map((type) => (
-          <li className="list-item flex align-items-center gap-xs">
+          <li className="list-item flex align-items-center flex-gap-xs">
             <FiCheck className="icon color-primary" /> <span>{type}</span>
           </li>
         ))}

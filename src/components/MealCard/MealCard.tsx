@@ -33,7 +33,7 @@ function MealCard({
           ))}
         </div>
         <p className="meal-card-title mb-m">{title}</p>
-        <ul className="meal-card-attributes flex flex-column gap-sm">
+        <ul className="meal-card-attributes flex flex-column flex-gap-s">
           <li>
             <HiOutlineFire className="meal-card-icon" />
             <span>

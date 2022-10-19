@@ -21,7 +21,7 @@ import "./TestimonialsSection.scss";
 
 function TestimonialsSection() {
   return (
-    <section className="testomonials-section grid  grid-gap-row-xs grid-gap-col-xs bg-tint px-m align-items-center">
+    <section className="testomonials-section grid-col-2  grid-gap-row-xs grid-gap-col-xs bg-tint px-m align-items-center">
       <div className="testimonials-container p-l">
         <span className="subheading mb-xs">Testimonials</span>
         <h2 className="heading-secondary mb-m">

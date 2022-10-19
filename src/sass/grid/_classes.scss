@@ -2,19 +2,32 @@
 @use "../spacing//variables" as *;
 
 .grid {
-  display: grid;
-
-  // * Grid Columns
+  // * Grid Columns -- grid-col-val
   @each $amount in $grid-columns {
     &-col-#{$amount} {
+      display: grid;
       grid-template-columns: repeat($amount, 1fr);
     }
   }
 
-  // * Alignment
   &-center {
-    &-y {
-      align-items: center;
+    &-items {
+      // Aligns item withing the cell
+      &-y {
+        align-items: center;
+      }
+      &-x {
+        justify-items: center;
+      }
+    }
+    // Aligns the cell itself
+    &-content {
+      &-y {
+        align-content: center;
+      }
+      &-x {
+        justify-content: center;
+      }
     }
   }
 
