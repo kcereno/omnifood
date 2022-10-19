@@ -1,6 +1,7 @@
 @use "../colors/variables" as color;
 @use "./variables" as *;
 @use "./mixins" as *;
+@use "../spacing/variables" as *;
 
 .heading {
   &-primary,
@@ -12,15 +13,15 @@
   }
 
   &-primary {
-    @include heading-style(map-get($font-sizes, xl), 1.05, null);
+    @include heading-style(map-get($font-sizes, xl), 1.05);
   }
 
   &-secondary {
-    @include heading-style(map-get($font-sizes, lg), 1.2, 9.6rem);
+    @include heading-style(map-get($font-sizes, lg), 1.2);
   }
 
   &-tertiary {
-    @include heading-style(map-get($font-sizes, md), 1.2, 3.2rem);
+    @include heading-style(map-get($font-sizes, md), 1.2);
   }
 }
 

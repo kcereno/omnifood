@@ -35,7 +35,6 @@
 }
 
 // Gap
-
 @each $size, $value in $gap-sizes {
   .gap {
     &-#{$size} {

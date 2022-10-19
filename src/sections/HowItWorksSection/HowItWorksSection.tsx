@@ -5,14 +5,14 @@ import image3 from "../../assets/images/app/app-screen-3.png";
 
 function HowItWorksSection() {
   return (
-    <section className="how pt-lg pb-xl ">
+    <section className="how py-l ">
       <div className="container">
         <span className="subheading">How It Works</span>
-        <h2 className="heading-secondary">
+        <h2 className="heading-secondary pb-m">
           Your daily dose of health in 3 simple steps
         </h2>
       </div>
-      <div className="container grid grid-col-2 grid-center-y">
+      <div className="container grid grid-gap-column-l grid-col-2 grid-gap-row-xl grid-center-y">
         {/* Step 1 */}
 
         <div className="step-text-box">

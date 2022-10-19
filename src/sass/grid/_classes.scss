@@ -1,9 +1,8 @@
 @use "./variables" as *;
+@use "../spacing//variables" as *;
 
 .grid {
   display: grid;
-  column-gap: map-get($map: $grid-gaps, $key: "sm");
-  row-gap: map-get($map: $grid-gaps, $key: "md");
 
   // * Grid Columns
   @each $amount in $grid-columns {
@@ -16,6 +15,26 @@
   &-center {
     &-y {
       align-items: center;
+    }
+  }
+
+  //*  Gaps
+  @each $key, $value in $spacing-sizes {
+    &-gap {
+      &-#{$key} {
+        gap: $value;
+      }
+
+      &-col {
+        &-#{$key} {
+          column-gap: $value;
+        }
+      }
+      &-row {
+        &-#{$key} {
+          column-gap: $value;
+        }
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 @use "/src/sass/colors/variables" as color;
+@use "../spacing/variables" as *;
 
 .link {
   &:visited,
@@ -7,7 +8,7 @@
     text-decoration: none;
     color: color.$primary;
     border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    padding-bottom: map-get($map: $spacing-sizes, $key: xs);
 
     transition: all 0.3s;
   }

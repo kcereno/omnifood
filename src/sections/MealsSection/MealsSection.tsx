@@ -6,15 +6,15 @@ import MealList from "../../components/MealList/MealList";
 
 function MealsSection() {
   return (
-    <section className="section-meals">
+    <section className="section-meals py-l">
       <div className="container">
         <span className="subheading text-center">Meals</span>
-        <h2 className="heading-secondary text-center">
+        <h2 className="heading-secondary text-center pb-m">
           Omnifood AI chooses from 5,000+ recipes
         </h2>
       </div>
 
-      <div className="container grid grid-col-3 mb-md">
+      <div className="container grid grid-col-3 grid-gap-column-l grid-gap-row-xl mb-m">
         <MealCard
           image={{ src: meal1, alt: "meal" }}
           data={{
@@ -53,7 +53,7 @@ function MealsSection() {
         />
       </div>
 
-      <div className="container text-center font-size-sm pb-lg">
+      <div className="container text-center font-size-sm ">
         <a href="/" className="link">
           See All Recipes &rarr;
         </a>

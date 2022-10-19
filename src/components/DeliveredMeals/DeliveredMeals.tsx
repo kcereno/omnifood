@@ -8,7 +8,7 @@ import image6 from "../../assets/images/customers/customer-6.jpg";
 
 function DeliveredMeals() {
   return (
-    <div className="delivered-meals flex align-items-center gap-sm mt-xl">
+    <div className="delivered-meals flex align-items-center gap-sm mt-l">
       <div className="delivered-imgs flex">
         <img src={image1} alt="customer profile pic" />
         <img src={image2} alt="customer profile pic" />

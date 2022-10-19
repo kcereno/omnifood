@@ -1,7 +1,16 @@
 $spacing-sizes: (
-  "xs": 0.8rem,
-  "sm": 1.6rem,
-  "md": 3.2rem,
-  "lg": 4.8rem,
-  "xl": 8rem,
+  xxs: 0.8rem,
+  // best friends
+  xs: 1.6rem,
+  // close friends
+  s: 2.4rem,
+  // close-ish friends
+  m: 3.2rem,
+  // friends
+  l: 6.4rem,
+  //acquaintance
+  xl: 7.2rem,
+  // distance acquaintance
+  xxl: 12.8rem,
+  // stranger
 );

@@ -24,7 +24,7 @@ function MealCard({
   return (
     <div className="meal-card">
       <img src={src} className="w-100" alt={alt} />
-      <div className="pt-md px-lg pb-lg">
+      <div className="pt-m px-l pb-l">
         <div className="flex gap-xs mb-xs">
           {categories.map((category) => (
             <span className={`tag tag-${category.toLowerCase()} `}>
@@ -32,7 +32,7 @@ function MealCard({
             </span>
           ))}
         </div>
-        <p className="meal-card-title mb-md">{title}</p>
+        <p className="meal-card-title mb-m">{title}</p>
         <ul className="meal-card-attributes flex flex-column gap-sm">
           <li>
             <HiOutlineFire className="meal-card-icon" />

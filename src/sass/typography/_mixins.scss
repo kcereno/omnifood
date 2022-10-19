@@ -1,5 +1,4 @@
-@mixin heading-style($font-size, $line-height, $margin-bottom) {
+@mixin heading-style($font-size, $line-height) {
   font-size: $font-size;
   line-height: $line-height;
-  margin-bottom: $margin-bottom;
 }

@@ -5,7 +5,7 @@
     width: 6.4rem;
   }
   &-text {
-    @include heading-style(map-get($font-sizes, sm), 1.6, 1.4);
+    @include heading-style(map-get($font-sizes, sm), 1.6);
   }
   &-name {
     font-size: map-get($font-sizes, xs);

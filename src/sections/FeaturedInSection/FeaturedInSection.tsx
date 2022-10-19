@@ -7,9 +7,9 @@ import "./FeaturedInSection.scss";
 
 function FeaturedInSection() {
   return (
-    <section className="section-featured py-lg">
+    <section className="section-featured py-m">
       <div className="container">
-        <h2 className="featured-heading text-center mb-sm">As Featured In</h2>
+        <h2 className="featured-heading text-center mb-s">As Featured In</h2>
         <div className="featured-logos flex flex-center-x justify-content-around ">
           <img src={logo1} alt="logo1" />
           <img src={logo2} alt="logo1" />
