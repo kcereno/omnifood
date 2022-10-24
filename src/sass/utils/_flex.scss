@@ -1,4 +1,4 @@
-@use "../variables" as *;
+@use "/src/sass/abstracts/abstracts" as *;
 
 @each $size, $value in $spacing-sizes {
   .flex-gap {

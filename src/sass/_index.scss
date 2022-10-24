@@ -1,27 +1,8 @@
-// @forward "./typography/classes";
-// @forward "./typography/mixins";
-// @forward "./typography/variables";
-
-// @forward "./spacing/classes";
-// @forward "./grid/classes";
-// @forward "./alignment/classes";
-// @forward "./backgrounds/classes";
-// @forward "./UI/classes";
-// @forward "./flex/classes";
-// @forward "./sizing/classes";
-// @forward "./global/classes";
-// @forward "./images/classes";
-
-// @forward "./colors/variables";
-
-@forward "./abstracts/utils/alignment";
-@forward "./abstracts/utils/color";
-@forward "./abstracts/utils/flex";
-@forward "./abstracts/utils/grid";
-@forward "./abstracts/utils/spacing";
-@forward "./abstracts/utils/typography";
-
-@forward "./abstracts/mixins";
-@forward "./abstracts/variables";
+@forward "./utils/alignment";
+@forward "./utils/flex";
+@forward "./utils/color";
+@forward "./utils/grid";
+@forward "./utils/spacing";
+@forward "./utils/typography";
 
 @forward "./base/base";
