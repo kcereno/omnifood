@@ -1,4 +1,4 @@
-@use "/src/sass/colors/variables" as color;
+@use "/src/sass/abstracts/variables" as *;
 
 .navbar {
   &-list {
@@ -10,7 +10,7 @@
     &:visited {
       display: inline-block;
       text-decoration: none;
-      color: color.$gray-1;
+      color: map-get($color, gray, 1);
       font-weight: 500;
       font-size: 1.8rem;
 
@@ -18,7 +18,7 @@
 
       &:hover,
       &:active {
-        color: color.$primary;
+        color: map-get($color, primary, base);
       }
     }
 
@@ -32,7 +32,7 @@
 
       &:hover,
       &:active {
-        background-color: color.$primary-shade-1;
+        background-color: map-get($color, primary, shade, 1);
       }
     }
   }

@@ -1,12 +1,8 @@
+@use "/src/sass/abstracts/variables" as *;
+
 .hero {
-  &-container {
-    max-width: 130rem;
-
-    align-items: center;
-  }
-
   &-description {
-    font-size: 2rem;
-    line-height: 1.5;
+    font-size: map-get($font, sizes, lg);
+    line-height: 1.2;
   }
 }

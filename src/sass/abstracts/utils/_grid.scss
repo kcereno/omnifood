@@ -1,0 +1,35 @@
+@use "../variables" as *;
+
+$grid-columns: 1, 2, 3, 4;
+
+$justify-items: (start, end, center, stretch);
+
+.grid {
+  // * Grid Columns -- grid-col-val
+  @each $amount in $grid-columns {
+    &-col-#{$amount} {
+      display: grid;
+      grid-template-columns: repeat($amount, 1fr);
+    }
+  }
+
+  //*  Gaps
+  @each $key, $value in $spacing-sizes {
+    &-gap {
+      &-#{$key} {
+        gap: $value;
+      }
+
+      &-col {
+        &-#{$key} {
+          column-gap: $value;
+        }
+      }
+      &-row {
+        &-#{$key} {
+          row-gap: $value;
+        }
+      }
+    }
+  }
+}

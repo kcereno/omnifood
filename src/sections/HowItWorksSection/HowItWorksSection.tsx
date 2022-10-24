@@ -5,14 +5,14 @@ import image3 from "../../assets/images/app/app-screen-3.png";
 
 function HowItWorksSection() {
   return (
-    <section className="how py-l">
+    <section className="how py-lg">
       <div className="container">
         <span className="subheading">How It Works</span>
-        <h2 className="heading-secondary pb-m">
+        <h2 className="heading-secondary pb-md">
           Your daily dose of health in 3 simple steps
         </h2>
       </div>
-      <div className="container grid grid-gap-column-l grid-col-2 grid-gap-row-xl center-items-y">
+      <div className="container grid-gap-col-md grid-col-2 grid-gap-row-lg align-items-center">
         {/* Step 1 */}
 
         <div className="step-text-box">
@@ -28,12 +28,12 @@ function HowItWorksSection() {
             follow!
           </p>
         </div>
-        <div className="step-img-box flex center-content-xy">
+        <div className="step-img-box d-flex align-content-center justify-content-center">
           <img src={image1} className="step-img " alt="screen1" />
         </div>
         {/* Step 2 */}
 
-        <div className="step-img-box flex center-content-xy">
+        <div className="step-img-box d-flex align-content-center justify-content-center">
           <img src={image2} className="step-img " alt="screen2" />
         </div>
         <div className="step-text-box">
@@ -55,7 +55,7 @@ function HowItWorksSection() {
             change delivery schedule and address daily!
           </p>
         </div>
-        <div className="step-img-box flex center-content-xy">
+        <div className="step-img-box d-flex align-content-center justify-content-center">
           <img src={image3} className="step-img " alt="screen2" />
         </div>
       </div>

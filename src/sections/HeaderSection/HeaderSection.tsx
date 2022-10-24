@@ -4,7 +4,7 @@ import Navbar from "../../components/UI/Navbar/Navbar";
 
 function HeaderSection() {
   return (
-    <header className="header flex justify-content-between align-items-center bg-tint">
+    <header className="header d-flex justify-content-between align-items-center bg-tint">
       <img src={logo} className="header-logo" alt="logo" />
       <Navbar />
     </header>

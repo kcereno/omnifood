@@ -1,5 +1,5 @@
-@use "/src/sass/colors/variables" as color;
-@use "/src/sass/typography/variables" as font;
+@use "/src/sass/abstracts/variables" as *;
+@use "/src/sass/abstracts/functions" as *;
 
 .pricing-plan {
   border-radius: 11px;
@@ -7,32 +7,32 @@
 
 .plan {
   &-name {
-    color: color.$primary-shade-1;
-    font-weight: map-get(font.$font-weights, semibold);
-    font-size: map-get(font.$font-sizes, md);
+    color: map-get($color, primary, shade, 1);
+    font-weight: map-get($font, weights, semibold);
+    font-size: map-get($font, sizes, md);
     text-transform: uppercase;
     line-height: 0.8;
   }
   &-price {
-    font-size: map-get(font.$font-sizes, xxl);
-    font-weight: map-get(font.$font-weights, semibold);
-    color: color.$gray-1;
+    font-size: map-get($font, sizes, xxl);
+    font-weight: map-get($font, weights, semibold);
+    color: map-get($color, gray, 1);
 
     span {
-      font-size: map-get(font.$font-sizes, xl);
-      font-weight: map-get(font.$font-weights, medium);
+      font-size: map-get($font, sizes, xl);
+      font-weight: map-get($font, weights, medium);
     }
   }
   &-text {
-    font-size: map-get(font.$font-sizes, sm);
+    font-size: map-get($font, sizes, sm);
     line-height: 1.6;
-    color: color.$gray-2;
+    color: map-get($color, gray, 2);
   }
 }
 
 .starter {
   justify-self: end;
-  border: 2px solid color.$primary-tint-1;
+  border: 2px solid map-get($color, primary, tint, 1);
   padding: 6.2rem;
 }
 
@@ -45,10 +45,30 @@
     content: "Best value";
     position: absolute;
     text-transform: uppercase;
-    font-size: map-get(font.$font-sizes, xs);
-    font-weight: map-get(font.$font-weights, bold);
+    font-size: map-get($font, sizes, xs);
+    font-weight: map-get($font, weights, bold);
     background-color: #ffd43b;
     padding: 0.8rem 3.2rem;
     transform: rotate(45deg);
+  }
+}
+
+.feature {
+  &-icon {
+    color: map-get($color, primary, base);
+    height: 6.4rem;
+    width: 6.4rem;
+    background-color: map-get($color, primary, tint, 2);
+    padding: 1.6rem;
+    border-radius: 50%;
+  }
+  &-title {
+    font-size: map-get($font, sizes, md);
+    color: map-get($color, gray, 1);
+    font-weight: 700;
+  }
+  &-text {
+    font-size: map-get($font, sizes, sm);
+    line-height: 1.6;
   }
 }

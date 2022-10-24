@@ -1,0 +1,50 @@
+@use "../abstracts/_variables.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: map-get($font, families, primary);
+  color: map-get($color, gray, 2);
+  line-height: 1; //1.5 the font size
+}
+
+.link {
+  &:visited,
+  &:link {
+    display: inline-block;
+    text-decoration: none;
+    color: map-get($color, primary, base);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: map-get($map: $spacing-sizes, $key: xxs);
+
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    color: map-get($color, primary, shade, 1);
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.list {
+  list-style: none;
+
+  &-item {
+    font-size: map-get($font, sizes, sm);
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: map-get($color, primary, base);
+}

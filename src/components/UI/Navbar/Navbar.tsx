@@ -3,7 +3,7 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <nav className="navbar">
-      <ul className="navbar-list flex align-items-center flex-gap-s">
+      <ul className="navbar-list d-flex align-items-center flex-gap-sm">
         <li>
           <a className="navbar-link" href="/">
             Section 1

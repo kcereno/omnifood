@@ -1,27 +1,29 @@
-@use "./variables" as *;
+// @use "./variables" as *;
 
-@each $size in $sizes {
-  .w {
-    &-#{$size} {
-      width: calc($size * 1%);
-    }
-  }
-  .h {
-    &-#{$size} {
-      height: calc($size * 1%);
-    }
-  }
+// $sizes: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 25, 75;
 
-  .m {
-    &w {
-      &-#{$size} {
-        max-width: calc($size * 1%);
-      }
-    }
-    &h {
-      &-#{$size} {
-        max-height: calc($size * 1%);
-      }
-    }
-  }
-}
+// @each $size in $sizes {
+//   .w {
+//     &-#{$size} {
+//       width: calc($size * 1%);
+//     }
+//   }
+//   .h {
+//     &-#{$size} {
+//       height: calc($size * 1%);
+//     }
+//   }
+
+//   .m {
+//     &w {
+//       &-#{$size} {
+//         max-width: calc($size * 1%);
+//       }
+//     }
+//     &h {
+//       &-#{$size} {
+//         max-height: calc($size * 1%);
+//       }
+//     }
+//   }
+// }

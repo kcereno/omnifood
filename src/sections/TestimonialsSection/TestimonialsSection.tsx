@@ -21,14 +21,14 @@ import "./TestimonialsSection.scss";
 
 function TestimonialsSection() {
   return (
-    <section className="testomonials-section grid-col-2  grid-gap-row-xs grid-gap-col-xs bg-tint px-m align-items-center">
-      <div className="testimonials-container p-l">
+    <section className="testomonials-section grid-col-2  grid-gap-row-xs grid-gap-col-xs bg-tint px-md align-items-center">
+      <div className="testimonials-container p-lg">
         <span className="subheading mb-xs">Testimonials</span>
-        <h2 className="heading-secondary mb-m">
+        <h2 className="heading-secondary mb-md">
           Once your try it, you can't go back
         </h2>
 
-        <div className="testimonials grid grid-col-2 grid-gap-xs">
+        <div className="testimonials  grid-col-2 grid-gap-xs">
           <Testimonial
             image={image1}
             text="Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical."
@@ -52,7 +52,7 @@ function TestimonialsSection() {
         </div>
       </div>
 
-      <div className="gallery p-s grid grid-col-3 grid-gap-xs ">
+      <div className="gallery p-sm  grid-col-3 grid-gap-xxs ">
         <figure className="gallery-item">
           <img src={galleryImage1} alt="gallery" />
         </figure>

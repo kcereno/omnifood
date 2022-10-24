@@ -1,0 +1,66 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.heading {
+  &-primary,
+  &-secondary,
+  &-tertiary {
+    font-weight: map-get($font, weights, bold);
+    color: map-get($color, gray, 1);
+    letter-spacing: -0.5px;
+  }
+
+  &-primary {
+    @include heading-style(map-get($font, sizes, xxl), 1.05);
+  }
+
+  &-secondary {
+    @include heading-style(map-get($font, sizes, xl), 1.2);
+  }
+
+  &-tertiary {
+    @include heading-style(map-get($font, sizes, md), 1.2);
+  }
+}
+
+.subheading {
+  display: block;
+  font-size: map-get($font, sizes, md);
+  font-weight: map-get($font, weights, medium);
+  color: map-get($color, primary, shade, 1);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: map-get($font, sizes, xs);
+  text-transform: uppercase;
+  color: map-get($color, gray, 2);
+  border-radius: 100px;
+  font-weight: map-get($font, weights, bold);
+
+  @each $category, $color in map-get($color, tags) {
+    &-#{$category} {
+      background-color: $color;
+    }
+  }
+}
+
+.font {
+  &-color {
+    &-shade {
+      color: map-get($color, primary, shade, 1);
+    }
+  }
+
+  @each $size, $value in map-get($font, sizes) {
+    &-size {
+      &-#{$size} {
+        font-size: $value;
+      }
+    }
+  }
+}

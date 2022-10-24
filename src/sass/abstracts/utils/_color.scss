@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+.bg {
+  @each $key, $val in map-get($color, background) {
+    &-#{$key} {
+      background-color: $val !important;
+    }
+  }
+}
+
+.text {
+  &-color {
+    &-shade {
+      color: map-get($color, primary, shade, 1);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use "../variables" as *;
+
+@each $size, $value in $spacing-sizes {
+  .flex-gap {
+    &-#{$size} {
+      gap: $value;
+    }
+  }
+}

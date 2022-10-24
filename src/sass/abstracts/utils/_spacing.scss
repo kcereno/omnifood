@@ -1,0 +1,63 @@
+@use "../variables" as *;
+
+@each $size, $value in $spacing-sizes {
+  .m {
+    &-#{$size} {
+      margin: $value !important;
+    }
+
+    &y-#{$size} {
+      margin-top: $value !important;
+      margin-bottom: $value !important;
+    }
+
+    &x-#{$size} {
+      margin-left: $value !important;
+      margin-right: $value !important;
+    }
+
+    &t-#{$size} {
+      margin-top: $value !important;
+    }
+    &b-#{$size} {
+      margin-bottom: $value !important;
+    }
+    &l-#{$size} {
+      margin-left: $value !important;
+    }
+    &r-#{$size} {
+      margin-right: $value !important;
+    }
+  }
+}
+
+@each $size, $value in $spacing-sizes {
+  .p {
+    &-#{$size} {
+      padding: $value !important;
+    }
+
+    &y-#{$size} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+
+    &x-#{$size} {
+      padding-left: $value !important;
+      padding-right: $value !important;
+    }
+
+    &t-#{$size} {
+      padding-top: $value !important;
+    }
+    &b-#{$size} {
+      padding-bottom: $value !important;
+    }
+    &l-#{$size} {
+      padding-left: $value !important;
+    }
+    &r-#{$size} {
+      padding-right: $value !important;
+    }
+  }
+}

@@ -24,16 +24,16 @@ function MealCard({
   return (
     <div className="meal-card">
       <img src={src} className="w-100" alt={alt} />
-      <div className="pt-m px-l pb-l">
-        <div className="flex gap-xs mb-xs">
+      <div className="pt-md px-lg pb-lg">
+        <div className="d-flex flex-gap-xxs mb-xs">
           {categories.map((category) => (
             <span className={`tag tag-${category.toLowerCase()} `}>
               {category}
             </span>
           ))}
         </div>
-        <p className="meal-card-title mb-m">{title}</p>
-        <ul className="meal-card-attributes flex flex-column flex-gap-s">
+        <p className="meal-card-title mb-md">{title}</p>
+        <ul className="meal-card-attributes d-flex flex-column flex-gap-sm">
           <li>
             <HiOutlineFire className="meal-card-icon" />
             <span>

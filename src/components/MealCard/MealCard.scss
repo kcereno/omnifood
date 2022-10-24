@@ -1,4 +1,4 @@
-@use "/src/sass/colors/variables" as color;
+@use "/src/sass/abstracts/variables" as *;
 
 .meal-card {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -14,14 +14,14 @@
 
   &-title {
     font-size: 2.4rem;
-    color: color.$gray-1;
+    color: map-get($color, gray, 1);
     font-weight: 600;
   }
 
   &-icon {
     height: 2.4rem;
     width: 2.4rem;
-    color: color.$primary;
+    color: map-get($color, primary, base);
   }
 
   &-attributes {
