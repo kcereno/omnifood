@@ -1,5 +1,4 @@
-@use "/src/sass/abstracts/variables" as *;
-@use "/src/sass/abstracts/functions" as *;
+@use "/src/sass/abstracts/abstracts" as *;
 
 .pricing-plan {
   border-radius: 11px;
@@ -7,32 +6,32 @@
 
 .plan {
   &-name {
-    color: map-get($color, primary, shade, 1);
-    font-weight: map-get($font, weights, semibold);
-    font-size: map-get($font, sizes, md);
+    color: $color-primary-shade-1;
+    font-weight: 600;
+    font-size: font-size(md);
     text-transform: uppercase;
     line-height: 0.8;
   }
   &-price {
-    font-size: map-get($font, sizes, xxl);
-    font-weight: map-get($font, weights, semibold);
-    color: map-get($color, gray, 1);
+    font-size: font-size(xxl);
+    font-weight: 600;
+    color: $color-gray-1;
 
     span {
-      font-size: map-get($font, sizes, xl);
-      font-weight: map-get($font, weights, medium);
+      font-size: font-size(xl);
+      font-weight: 500;
     }
   }
   &-text {
-    font-size: map-get($font, sizes, sm);
+    font-size: font-size(sm);
     line-height: 1.6;
-    color: map-get($color, gray, 2);
+    color: $color-gray-2;
   }
 }
 
 .starter {
   justify-self: end;
-  border: 2px solid map-get($color, primary, tint, 1);
+  border: 2px solid $color-primary-tint-1;
   padding: 6.2rem;
 }
 
@@ -45,8 +44,8 @@
     content: "Best value";
     position: absolute;
     text-transform: uppercase;
-    font-size: map-get($font, sizes, xs);
-    font-weight: map-get($font, weights, bold);
+    font-size: font-size(xs);
+    font-weight: 700;
     background-color: #ffd43b;
     padding: 0.8rem 3.2rem;
     transform: rotate(45deg);
@@ -55,20 +54,20 @@
 
 .feature {
   &-icon {
-    color: map-get($color, primary, base);
+    color: $color-primary-base;
     height: 6.4rem;
     width: 6.4rem;
-    background-color: map-get($color, primary, tint, 2);
+    background-color: $color-primary-tint-2;
     padding: 1.6rem;
     border-radius: 50%;
   }
   &-title {
-    font-size: map-get($font, sizes, md);
-    color: map-get($color, gray, 1);
+    font-size: font-size(md);
+    color: $color-gray-1;
     font-weight: 700;
   }
   &-text {
-    font-size: map-get($font, sizes, sm);
+    font-size: font-size(sm);
     line-height: 1.6;
   }
 }

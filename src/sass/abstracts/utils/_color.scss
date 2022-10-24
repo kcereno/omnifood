@@ -1,7 +1,12 @@
 @use "../variables" as *;
 
+$bg-colors: (
+  primary: $color-primary-base,
+  tint: $color-primary-tint-1,
+);
+
 .bg {
-  @each $key, $val in map-get($color, background) {
+  @each $key, $val in $bg-colors {
     &-#{$key} {
       background-color: $val !important;
     }
@@ -11,7 +16,7 @@
 .text {
   &-color {
     &-shade {
-      color: map-get($color, primary, shade, 1);
+      color: $color-primary-shade-1;
     }
   }
 }

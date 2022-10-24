@@ -1,4 +1,4 @@
-@use "../abstracts/_variables.scss" as *;
+@use "/src/sass/abstracts/abstracts" as *;
 
 * {
   margin: 0;
@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  font-family: map-get($font, families, primary);
-  color: map-get($color, gray, 2);
+  font-family: $font-family-primary;
+  color: $color-gray-2;
   line-height: 1; //1.5 the font size
 }
 
@@ -21,7 +21,7 @@ body {
   &:link {
     display: inline-block;
     text-decoration: none;
-    color: map-get($color, primary, base);
+    color: $color-primary-base;
     border-bottom: 1px solid currentColor;
     padding-bottom: map-get($map: $spacing-sizes, $key: xxs);
 
@@ -30,7 +30,7 @@ body {
 
   &:hover,
   &:active {
-    color: map-get($color, primary, shade, 1);
+    color: $color-primary-shade-1;
     border-bottom: 1px solid transparent;
   }
 }
@@ -39,12 +39,12 @@ body {
   list-style: none;
 
   &-item {
-    font-size: map-get($font, sizes, sm);
+    font-size: font-size(sm);
   }
 }
 
 .icon {
   width: 3rem;
   height: 3rem;
-  color: map-get($color, primary, base);
+  color: $color-primary-base;
 }

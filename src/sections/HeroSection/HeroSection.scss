@@ -1,8 +1,8 @@
-@use "/src/sass/abstracts/variables" as *;
+@use "/src/sass/abstracts/abstracts" as *;
 
 .hero {
   &-description {
-    font-size: map-get($font, sizes, lg);
+    font-size: font-size(lg);
     line-height: 1.2;
   }
 }

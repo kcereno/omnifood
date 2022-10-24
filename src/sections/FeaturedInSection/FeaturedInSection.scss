@@ -1,12 +1,12 @@
-@use "/src/sass/abstracts/variables" as *;
+@use "/src/sass/abstracts/abstracts" as *;
 
 .featured {
   &-heading {
-    font-size: map-get($font, sizes, sm);
+    font-size: font-size(sm);
     text-transform: uppercase;
     letter-spacing: 0.75px;
     font-weight: 500;
-    color: map-get($color, gray, 3);
+    color: $color-gray-3;
   }
 
   &-logos {

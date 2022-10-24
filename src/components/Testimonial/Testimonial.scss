@@ -1,4 +1,4 @@
-@use "/src/sass/abstracts/variables" as *;
+@use "/src/sass/abstracts/abstracts" as *;
 @use "/src/sass/abstracts/mixins" as *;
 
 .testimonial {
@@ -7,10 +7,10 @@
     border-radius: 50px;
   }
   &-text {
-    @include heading-style(map-get($font, sizes, md), 1.6);
+    @include heading-style(1.8rem, 1.8);
   }
   &-name {
-    font-size: map-get($font, sizes, sm);
-    color: map-get($color, gray, 1);
+    font-size: font-size(sm);
+    color: $color-gray-1;
   }
 }
