@@ -6,6 +6,7 @@ $color-primary-base: #e67e22;
 
 $color-primary-tint-1: #fdf2e9;
 $color-primary-tint-2: #fae5d3;
+$color-primary-tint-3: #eb984e;
 
 $color-primary-shade-1: #cf711f;
 
@@ -23,6 +24,7 @@ $tag-colors: (
 $font-family-primary: "Rubik", sans-serif;
 
 $font-sizes: (
+  0: 0rem,
   // small
   xs: 1.2rem,
   // p - normal text
@@ -36,17 +38,8 @@ $font-sizes: (
   //headlines
   xxl: 5.1rem,
   xxxl: 6.7rem,
-  xxxxl: 8rem
+  xxxxl: 8rem,
 );
-
-// $font: (
-//   weights: (
-//     regular: 400,
-//     medium: 500,
-//     semibold: 600,
-//     bold: 700,
-//   ),
-// );
 
 $spacing-sizes: (
   // best friends

@@ -28,7 +28,7 @@ function TestimonialsSection() {
           Once your try it, you can't go back
         </h2>
 
-        <div className="testimonials  grid-col-2 grid-gap-xs">
+        <div className="testimonials  grid-col-2 grid-gap-md">
           <Testimonial
             image={image1}
             text="Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical."

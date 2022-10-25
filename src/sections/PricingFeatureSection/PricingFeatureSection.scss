@@ -27,6 +27,11 @@
     line-height: 1.6;
     color: $color-gray-2;
   }
+
+  &-details {
+    font-size: font-size(sm);
+    line-height: 1.6;
+  }
 }
 
 .starter {

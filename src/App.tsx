@@ -1,4 +1,5 @@
 import "./App.scss";
+import CallToActionSection from "./sections/CallToActionSection/CallToActionSection";
 import FeaturedInSection from "./sections/FeaturedInSection/FeaturedInSection";
 import HeaderSection from "./sections/HeaderSection/HeaderSection";
 import HeroSection from "./sections/HeroSection/HeroSection";
@@ -18,6 +19,7 @@ function App() {
         <MealsSection />
         <TestimonialsSection />
         <PricingFeatureSection />
+        <CallToActionSection />
       </main>
     </div>
   );

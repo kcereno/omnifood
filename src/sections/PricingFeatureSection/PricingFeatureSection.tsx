@@ -86,8 +86,15 @@ function PricingFeatureSection() {
         </div>
       </div>
 
+      <div className="container pb-xl">
+        <aside className="plan-details text-center">
+          Prices include all applicable taxes. You can cancel at any time. Both
+          plans include the following:
+        </aside>
+      </div>
+
       {/* Feature */}
-      <div className="container grid-col-4 grid-gap-col-xs">
+      <div className="container  grid-col-4 grid-gap-col-xs">
         <div className="feature">
           <IoInfiniteOutline className="feature-icon mb-sm" />
           <p className="feature-title mb-xs">Never cook again!</p>
