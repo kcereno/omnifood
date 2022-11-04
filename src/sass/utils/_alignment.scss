@@ -4,6 +4,23 @@ $axis: (x, y, xy);
   text-align: center;
 }
 
+// Flex Center
+.flex-center {
+  &-x {
+    display: flex;
+    justify-content: center;
+  }
+  &-y {
+    display: flex;
+    align-items: center;
+  }
+  &-xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 // Centers element
 .center {
   &-x {

@@ -16,13 +16,15 @@ function HeroSection() {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <Button href="/" className="mr-xs">
-            Start eating well
-          </Button>
 
-          <Button variant="outline" href="/">
-            Learn More &darr;
-          </Button>
+          <div className="">
+            <a href="/" className="btn btn-full mr-sm">
+              Start Eating Well
+            </a>
+            <a href="/" className="btn btn-outline">
+              Learn More &darr;
+            </a>
+          </div>
 
           <DeliveredMeals />
         </div>
