@@ -1,1 +1,80 @@
 @use "/src/sass/abstracts/abstracts" as *;
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+
+  &-heading {
+    font-size: font-size(sm);
+    font-weight: 500;
+    margin-bottom: spacing-size(xs);
+  }
+
+  &-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: spacing-size(xs);
+    padding-left: 0;
+  }
+
+  &-link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      font-size: font-size(xs);
+      color: $color-gray-4;
+
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-gray-2;
+    }
+  }
+
+  &-logo {
+    display: block;
+  }
+}
+
+.social {
+  &-links {
+    list-style: none;
+    display: flex;
+    gap: spacing-size(sm);
+    padding-left: 0;
+  }
+
+  &-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.copyright {
+  font-size: font-size(xs);
+  color: $color-gray-4;
+  line-height: 1.6;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.col {
+  &-logo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts {
+  font-style: normal;
+  font-size: font-size(sm);
+  line-height: 1.6;
+  color: $color-gray-4;
+}

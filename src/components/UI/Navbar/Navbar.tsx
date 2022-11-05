@@ -6,27 +6,27 @@ function Navbar() {
       <ul className="navbar-list d-flex align-items-center flex-gap-sm">
         <li>
           <a className="navbar-link" href="/">
-            Section 1
+            How It Works
           </a>
         </li>
         <li>
           <a className="navbar-link" href="/">
-            Section 2
+            Meals
           </a>
         </li>
         <li>
           <a className="navbar-link" href="/">
-            Section 3
+            Testimonials
           </a>
         </li>
         <li>
           <a className="navbar-link" href="/">
-            Section 4
+            Pricing
           </a>
         </li>
         <li>
           <a className="navbar-link navbar-cta bg-primary" href="/">
-            Section 5
+            Try for free
           </a>
         </li>
       </ul>

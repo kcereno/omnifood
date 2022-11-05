@@ -2,7 +2,7 @@ import "./CallToActionSection.scss";
 
 function CallToActionSection() {
   return (
-    <section className="cta-section pb-xl">
+    <section className="cta-section pb-xxl">
       <div className="container">
         <div className="cta">
           <div className="cta-text-box py-md px-xl">
