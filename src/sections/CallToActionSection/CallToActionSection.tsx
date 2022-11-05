@@ -1,12 +1,11 @@
-import Button from "../../components/UI/Button/Button";
 import "./CallToActionSection.scss";
 
 function CallToActionSection() {
   return (
-    <section className="cta-section">
+    <section className="cta-section pb-xl">
       <div className="container">
         <div className="cta">
-          <div className="cta-text-box pt-lg px-xl">
+          <div className="cta-text-box py-md px-xl">
             <h2 className="heading-secondary mb-md">
               Get Your First Meal For Free!
             </h2>

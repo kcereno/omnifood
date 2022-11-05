@@ -1,6 +1,7 @@
 import "./App.scss";
 import CallToActionSection from "./sections/CallToActionSection/CallToActionSection";
 import FeaturedInSection from "./sections/FeaturedInSection/FeaturedInSection";
+import FooterSection from "./sections/FooterSection/FooterSection";
 import HeaderSection from "./sections/HeaderSection/HeaderSection";
 import HeroSection from "./sections/HeroSection/HeroSection";
 import HowItWorksSection from "./sections/HowItWorksSection/HowItWorksSection";
@@ -21,6 +22,7 @@ function App() {
         <PricingFeatureSection />
         <CallToActionSection />
       </main>
+      <FooterSection />
     </div>
   );
 }
