@@ -3,30 +3,30 @@
 @each $size, $value in $spacing-sizes {
   .m {
     &-#{$size} {
-      margin: $value !important;
+      margin: $value;
     }
 
     &y-#{$size} {
-      margin-top: $value !important;
-      margin-bottom: $value !important;
+      margin-top: $value;
+      margin-bottom: $value;
     }
 
     &x-#{$size} {
-      margin-left: $value !important;
-      margin-right: $value !important;
+      margin-left: $value;
+      margin-right: $value;
     }
 
     &t-#{$size} {
-      margin-top: $value !important;
+      margin-top: $value;
     }
     &b-#{$size} {
-      margin-bottom: $value !important;
+      margin-bottom: $value;
     }
     &l-#{$size} {
-      margin-left: $value !important;
+      margin-left: $value;
     }
     &r-#{$size} {
-      margin-right: $value !important;
+      margin-right: $value;
     }
   }
 }
@@ -34,30 +34,30 @@
 @each $size, $value in $spacing-sizes {
   .p {
     &-#{$size} {
-      padding: $value !important;
+      padding: $value;
     }
 
     &y-#{$size} {
-      padding-top: $value !important;
-      padding-bottom: $value !important;
+      padding-top: $value;
+      padding-bottom: $value;
     }
 
     &x-#{$size} {
-      padding-left: $value !important;
-      padding-right: $value !important;
+      padding-left: $value;
+      padding-right: $value;
     }
 
     &t-#{$size} {
-      padding-top: $value !important;
+      padding-top: $value;
     }
     &b-#{$size} {
-      padding-bottom: $value !important;
+      padding-bottom: $value;
     }
     &l-#{$size} {
-      padding-left: $value !important;
+      padding-left: $value;
     }
     &r-#{$size} {
-      padding-right: $value !important;
+      padding-right: $value;
     }
   }
 }

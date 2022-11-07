@@ -12,7 +12,7 @@ function HowItWorksSection() {
           Your daily dose of health in 3 simple steps
         </h2>
       </div>
-      <div className="container grid-gap-col-md grid-col-2 grid-gap-row-lg align-items-center">
+      <div className="container grid grid-gap-col-md grid-col-2 grid-gap-row-xl align-items-center">
         {/* Step 1 */}
 
         <div className="step-text-box">
