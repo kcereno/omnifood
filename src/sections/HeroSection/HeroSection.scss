@@ -1,6 +1,8 @@
 @use "/src/sass/abstracts/abstracts" as *;
 
 .hero {
+  max-width: 130rem;
+
   &-description {
     font-size: font-size(lg);
     line-height: 1.2;

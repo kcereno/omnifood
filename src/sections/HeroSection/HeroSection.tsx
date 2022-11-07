@@ -6,7 +6,7 @@ import "./HeroSection.scss";
 function HeroSection() {
   return (
     <section className="hero-section bg-tint pb-lg pt-md ">
-      <div className="  container align-items-center  grid-col-2 grid-gap-col-lg  grid-gap-row-xl px-md">
+      <div className="hero container align-items-center  grid-col-2 grid-gap-col-lg  grid-gap-row-xl px-md">
         <div className="hero-text-box">
           <h1 className="heading-primary mb-md">
             A healthy meal delivered to your door, every single day!

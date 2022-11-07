@@ -1,0 +1,15 @@
+@use "/src/sass/abstracts/abstracts" as *;
+
+@media (max-width: $breakpoint-desktop) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: font-size(xl);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
