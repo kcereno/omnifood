@@ -24,8 +24,8 @@ function MealCard({
   return (
     <div className="meal-card">
       <img src={src} className="w-100" alt={alt} />
-      <div className="pt-md px-lg pb-lg">
-        <div className="d-flex flex-gap-xxs mb-xs">
+      <div className="meal-content pt-md px-lg pb-md ">
+        <div className="d-flex  flex-gap-xxs mb-xs">
           {categories.map((category) => (
             <span className={`tag tag-${category.toLowerCase()} `}>
               {category}

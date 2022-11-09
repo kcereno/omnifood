@@ -14,9 +14,23 @@
     $color-primary-base
   );
 
+  @include media(tablet-portrait) {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  &-section {
+    @include media(tablet-landscape) {
+      padding-bottom: spacing-size(xl);
+    }
+  }
+
   &-text {
     font-size: font-size(sm);
     line-height: 1.8;
+
+    @include media(tablet-portrait) {
+      margin-bottom: spacing-size(md);
+    }
 
     &-box {
       color: #2e1907;
@@ -39,6 +53,10 @@
   }
 
   &-form {
+    @include media(tablet-portrait) {
+      grid-template-columns: 1fr;
+    }
+
     *:focus {
       box-shadow: 0 0 0 0.8rem rgba($color-primary-tint-1, 0.5) !important;
     }

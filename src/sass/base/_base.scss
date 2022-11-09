@@ -21,6 +21,7 @@ body {
   font-family: $font-family-primary;
   color: $color-gray-2;
   line-height: 1; //1.5 the font size
+  font-size: 62.5%;
 }
 
 .link {
@@ -47,6 +48,7 @@ body {
 
   &-item {
     font-size: font-size(sm);
+    line-height: 1.2;
   }
 }
 

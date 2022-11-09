@@ -1,5 +1,4 @@
 @use "/src/sass/abstracts/abstracts" as *;
-@use "/src/sass/abstracts/mixins" as *;
 
 .testimonial {
   &-img {
@@ -12,5 +11,11 @@
   &-name {
     font-size: font-size(sm);
     color: $color-gray-1;
+  }
+}
+
+.testimonials {
+  @include media(tablet-landscape) {
+    gap: spacing-size(sm);
   }
 }

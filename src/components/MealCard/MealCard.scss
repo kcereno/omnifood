@@ -11,31 +11,35 @@
     transform: translateY(-1.2rem);
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
   }
+}
 
-  &-title {
-    font-size: 2.4rem;
-    color: $color-gray-1;
-    font-weight: 600;
-  }
+.meal-card-title {
+  font-size: 2.4rem;
+  color: $color-gray-1;
+  font-weight: 600;
+}
 
-  &-icon {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: $color-primary-base;
-  }
+.meal-card-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: $color-primary-base;
+}
 
-  &-attributes {
-    list-style: none;
-    font-size: 1.8rem;
-    padding-left: 0;
+.meal-card-attributes {
+  list-style: none;
+  font-size: 1.8rem;
+  padding-left: 0;
 
-    li {
-      display: flex;
-      align-items: center;
+  li {
+    display: flex;
+    align-items: center;
 
-      span {
-        margin-left: 0.8rem;
-      }
+    span {
+      margin-left: 0.8rem;
     }
   }
+}
+
+.meal-content {
+  padding-inline: spacing-size(md);
 }

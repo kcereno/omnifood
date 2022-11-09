@@ -1,0 +1,7 @@
+@use "../abstracts/abstracts" as *;
+
+.container {
+  max-width: 130rem;
+  margin-inline: auto;
+  padding-inline: spacing-size(md);
+}

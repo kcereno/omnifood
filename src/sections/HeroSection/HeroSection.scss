@@ -3,8 +3,34 @@
 .hero {
   max-width: 130rem;
 
-  &-description {
-    font-size: font-size(lg);
-    line-height: 1.2;
+  @include media(desktop) {
+    max-width: 120rem;
+  }
+  @include media(tablet-landscape) {
+    column-gap: spacing-size(md);
+  }
+  @include media(tablet-portrait) {
+    grid-template-columns: 1fr;
+    padding-inline: spacing-size(xxl);
+    gap: spacing-size(lg);
+  }
+}
+
+.hero-text-box,
+.hero-img-box {
+  @include media(tablet-portrait) {
+    text-align: center;
+  }
+}
+
+.hero-description {
+  font-size: font-size(lg);
+  line-height: 1.2;
+}
+
+.hero-img {
+  width: 100%;
+  @include media(tablet-portrait) {
+    width: 60%;
   }
 }

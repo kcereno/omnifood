@@ -1,19 +1,48 @@
+@use "/src/sass/abstracts/abstracts" as *;
+
 .gallery {
-  &-item {
-    overflow: hidden;
-    img {
-      display: block;
-      width: 100%;
+  @include media(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media(tablet-portrait) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 
-      transition: all 0.4s;
+.gallery-item {
+  overflow: hidden;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+  img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
     }
+  }
+  @include media(desktop) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .testomonials-section {
   grid-template-columns: 60fr 40fr;
+
+  @include media(tablet-portrait) {
+    padding-inline: spacing-size(xxs);
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonials {
+  @include media(tablet-portrait) {
+    gap: spacing-size(xs);
+  }
+}
+
+.testimonials-container {
+  @include media(tablet-portrait) {
+    padding-bottom: spacing-size(md);
+  }
 }

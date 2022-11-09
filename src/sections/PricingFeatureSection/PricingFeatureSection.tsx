@@ -18,8 +18,8 @@ function PricingFeatureSection() {
         </h2>
       </div>
       {/* PRICING PLANS */}
-      <div className="container  grid-col-2 grid-gap-lg mb-lg">
-        <div className="pricing-plan starter  w-75">
+      <div className="container grid  grid-col-2 grid-gap-lg mb-lg">
+        <div className="pricing-plan starter ">
           <header className="plan-header text-center mb-md">
             <p className="plan-name mb-sm">Starter</p>
             <p className="plan-price mb-xs">
@@ -49,7 +49,7 @@ function PricingFeatureSection() {
           </div>
         </div>
 
-        <div className="pricing-plan complete bg-tint p-lg w-75 ">
+        <div className="pricing-plan complete bg-tint p-lg">
           <header className="plan-header text-center mb-md">
             <p className="plan-name mb-sm ">Complete</p>
             <p className="plan-price mb-xs">
@@ -94,7 +94,7 @@ function PricingFeatureSection() {
       </div>
 
       {/* Feature */}
-      <div className="container  grid-col-4 grid-gap-col-xs">
+      <div className="container grid grid-col-4 grid-gap-col-xs">
         <div className="feature">
           <IoInfiniteOutline className="feature-icon mb-sm" />
           <p className="feature-title mb-xs">Never cook again!</p>

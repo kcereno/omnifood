@@ -1,39 +1,20 @@
 @use "/src/sass/abstracts/abstracts" as *;
 
-// Desktops and larger
-@media (max-width: $breakpoint-desktop) {
-  .hero {
-    max-width: 120rem;
-  }
+// // Tablets - Landscape
+// @media (max-width: $breakpoint-tablet-landscape) {
+//   .grid {
+//     row-gap: spacing-size(md);
+//   }
 
-  .heading-primary {
-    font-size: font-size(xl);
-  }
+//   .hero {
+//     column-gap: spacing-size(md);
+//   }
 
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+//   .testimonials {
+//     gap: spacing-size(sm);
+//   }
 
-// Tablets - Landscape
-@media (max-width: $breakpoint-tablet-landscape) {
-  html {
-    font-size: 56.25%;
-  }
-
-  .grid {
-    row-gap: spacing-size(md);
-  }
-
-  .hero {
-    column-gap: spacing-size(md);
-  }
-
-  .testimonials {
-    gap: spacing-size(sm);
-  }
-
-  .cta-section {
-    padding-bottom: spacing-size(xl);
-  }
-}
+//   .cta-section {
+//     padding-bottom: spacing-size(xl);
+//   }
+// }

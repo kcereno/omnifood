@@ -13,6 +13,10 @@
 
   &-primary {
     @include heading-style(font-size(xxl), 1.05);
+
+    @include media(desktop) {
+      font-size: font-size(xl);
+    }
   }
 
   &-secondary {

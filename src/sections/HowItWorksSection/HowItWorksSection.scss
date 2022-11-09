@@ -1,48 +1,50 @@
 @use "/src/sass/abstracts/abstracts" as *;
 
-.step {
-  &-number {
-    font-size: font-size(xxxl);
-    font-weight: 500;
-    color: darkgray;
-    margin-bottom: map-get($spacing-sizes, xs);
+.step-number {
+  font-size: font-size(xxxl);
+  font-weight: 500;
+  color: darkgray;
+  margin-bottom: map-get($spacing-sizes, xs);
+
+  @include media(tablet-portrait) {
+    font-size: font-size(xxl);
+  }
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-img-box {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  &-description {
-    font-size: 1.8rem;
-    line-height: 1.8;
+  &::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: $color-primary-tint-1;
+    z-index: -2;
   }
 
-  &-img {
-    width: 35%;
-
-    &-box {
-      position: relative;
-
-      &::before,
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        border-radius: 50%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &::before {
-        width: 60%;
-        padding-bottom: 60%;
-        background-color: $color-primary-tint-1;
-        z-index: -2;
-      }
-
-      &::after {
-        width: 45%;
-        padding-bottom: 45%;
-        background-color: $color-primary-tint-2;
-        z-index: -1;
-      }
-    }
+  &::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: $color-primary-tint-2;
+    z-index: -1;
   }
 }

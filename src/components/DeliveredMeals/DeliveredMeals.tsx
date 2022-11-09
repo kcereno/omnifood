@@ -10,12 +10,36 @@ function DeliveredMeals() {
   return (
     <div className="delivered-meals d-flex align-items-center flex-gap-xs mt-lg">
       <div className="delivered-imgs flex">
-        <img src={image1} alt="customer profile pic" />
-        <img src={image2} alt="customer profile pic" />
-        <img src={image3} alt="customer profile pic" />
-        <img src={image4} alt="customer profile pic" />
-        <img src={image5} alt="customer profile pic" />
-        <img src={image6} alt="customer profile pic" />
+        <img
+          src={image1}
+          className="delivered-img"
+          alt="customer profile pic"
+        />
+        <img
+          src={image2}
+          className="delivered-img"
+          alt="customer profile pic"
+        />
+        <img
+          src={image3}
+          className="delivered-img"
+          alt="customer profile pic"
+        />
+        <img
+          src={image4}
+          className="delivered-img"
+          alt="customer profile pic"
+        />
+        <img
+          src={image5}
+          className="delivered-img"
+          alt="customer profile pic"
+        />
+        <img
+          src={image6}
+          className="delivered-img"
+          alt="customer profile pic"
+        />
       </div>
       <p className="delivered-text">
         <span className="text-color-shade">250,000+ </span>meals delivered last

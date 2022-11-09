@@ -1,4 +1,16 @@
+@use "./variables" as *;
+
 @mixin heading-style($font-size, $line-height) {
   font-size: $font-size;
   line-height: $line-height;
+}
+
+@mixin media($type) {
+  @each $key, $val in $media-breakpoints {
+    @if $type == $key {
+      @media only screen and (max-width: $val) {
+        @content;
+      }
+    }
+  }
 }

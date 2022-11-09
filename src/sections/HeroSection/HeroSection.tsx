@@ -1,12 +1,12 @@
 import image from "../../assets/images/hero.png";
 import DeliveredMeals from "../../components/DeliveredMeals/DeliveredMeals";
-import Button from "../../components/UI/Button/Button";
+
 import "./HeroSection.scss";
 
 function HeroSection() {
   return (
     <section className="hero-section bg-tint pb-lg pt-md ">
-      <div className="hero container align-items-center  grid-col-2 grid-gap-col-lg  grid-gap-row-xl px-md">
+      <div className="hero container align-items-center grid grid-col-2 grid-gap-col-lg  grid-gap-row-xl px-md">
         <div className="hero-text-box">
           <h1 className="heading-primary mb-md">
             A healthy meal delivered to your door, every single day!
@@ -30,7 +30,7 @@ function HeroSection() {
         </div>
 
         <div className="hero-img-box">
-          <img src={image} className="w-100" alt="hero " />
+          <img src={image} className="hero-img" alt="hero " />
         </div>
       </div>
     </section>

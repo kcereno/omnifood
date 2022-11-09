@@ -1,19 +1,19 @@
 @use "/src/sass/abstracts/abstracts" as *;
 
-.featured {
-  &-heading {
-    font-size: font-size(sm);
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    font-weight: 500;
-    color: $color-gray-3;
-  }
+.featured-heading {
+  font-size: font-size(sm);
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  color: $color-gray-3;
+}
 
-  &-logos {
-    img {
-      height: 3.2rem;
-      filter: brightness(0);
-      opacity: 50%;
-    }
+.featured-logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+
+  @include media(tablet-portrait) {
+    height: 2.8rem;
   }
 }

@@ -3,6 +3,10 @@
 .grid-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  @include media(tablet-portrait) {
+    gap: spacing-size(sm);
+  }
 }
 
 .footer {

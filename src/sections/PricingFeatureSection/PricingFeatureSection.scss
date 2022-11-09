@@ -2,6 +2,11 @@
 
 .pricing-plan {
   border-radius: 11px;
+  @include media(tablet-portrait) {
+    a {
+      font-size: font-size(sm);
+    }
+  }
 }
 
 .plan {
@@ -38,11 +43,13 @@
   justify-self: end;
   border: 2px solid $color-primary-tint-1;
   padding: 6.2rem;
+  width: 75%;
 }
 
 .complete {
   position: relative;
   overflow: hidden;
+  width: 75%;
   &::after {
     top: 4%;
     right: -8%;
@@ -54,6 +61,13 @@
     background-color: #ffd43b;
     padding: 0.8rem 3.2rem;
     transform: rotate(45deg);
+  }
+}
+
+.starter,
+.complete {
+  @include media(tablet-portrait) {
+    width: 100%;
   }
 }
 

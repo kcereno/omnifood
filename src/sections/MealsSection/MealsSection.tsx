@@ -14,7 +14,7 @@ function MealsSection() {
         </h2>
       </div>
 
-      <div className="container  grid-col-3 grid-gap-col-lg grid-gap-row-xl mb-md">
+      <div className="container grid grid-col-3 grid-gap-col-lg grid-gap-row-xl mb-md">
         <MealCard
           image={{ src: meal1, alt: "meal" }}
           data={{
@@ -53,7 +53,7 @@ function MealsSection() {
         />
       </div>
 
-      <div className="container text-center font-size-md ">
+      <div className="container text-center font-size-md">
         <a href="/" className="link">
           See All Recipes &rarr;
         </a>

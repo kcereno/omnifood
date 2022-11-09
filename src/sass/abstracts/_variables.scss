@@ -57,9 +57,17 @@ $spacing-sizes: (
   // distant acquaintances
   xl: 7.2rem,
   // stranger
-  xxl: 12.8rem
+  xxl: 12.8rem,
+  xxxl: 16rem
 );
 
 // Breakpoints
-$breakpoint-desktop: 84em; // 1344px
-$breakpoint-tablet-landscape: 75em; // 1200px
+
+$media-breakpoints: (
+  // 1344px
+  desktop: 84em,
+  // 1200px
+  tablet-landscape: 75em,
+  // 980px
+  tablet-portrait: 61.5em
+);

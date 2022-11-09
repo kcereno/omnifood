@@ -17,7 +17,7 @@ function CallToActionSection() {
 
             <form
               action=""
-              className="cta-form grid-col-2 grid-gap-col-md grid-gap-row-sm"
+              className="cta-form grid grid-col-2 grid-gap-col-md grid-gap-row-sm"
             >
               <div className="">
                 <label htmlFor="full-name">Full Name</label>
