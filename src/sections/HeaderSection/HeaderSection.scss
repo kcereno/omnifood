@@ -9,7 +9,7 @@
   height: 2.2rem;
 }
 
-.navbar {
+.main-nav {
   &-list {
     list-style: none;
   }
@@ -31,7 +31,7 @@
       }
     }
 
-    &.navbar-cta {
+    &.main-nav-cta {
       &:link,
       &:visited {
         padding: 1.2rem 2.4rem;
@@ -67,7 +67,7 @@
 
 // Mobile
 @include media(tablet-portrait) {
-  .navbar {
+  .main-nav {
     background-color: white;
     position: absolute;
     top: 0;
@@ -75,8 +75,10 @@
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
+    display: flex;
 
     justify-content: center;
+    align-items: center;
 
     // Hide element visually. Use this becuase display:none does not allow transitions
     opacity: 0;
@@ -87,14 +89,19 @@
     // Hide from screen readers
     visibility: hidden;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  .nav-open .navbar {
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: spacing-size(md);
   }
 
   .nav-open .icon-mobile-nav {
@@ -107,13 +114,8 @@
     }
   }
 
-  .navbar-list {
-    flex-direction: column;
-    gap: spacing-size(md);
-  }
-
-  .navbar-link:link,
-  .navbar-link:visited {
+  .main-nav-link:link,
+  .main-nav-link:visited {
     font-size: font-size(lg);
   }
 
