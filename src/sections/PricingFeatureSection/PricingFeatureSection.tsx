@@ -94,7 +94,7 @@ function PricingFeatureSection() {
       </div>
 
       {/* Feature */}
-      <div className="container grid grid-col-4 grid-gap-col-xs">
+      <div className="pricing-feature container grid grid-col-4 grid-gap-col-xs">
         <div className="feature">
           <IoInfiniteOutline className="feature-icon mb-sm" />
           <p className="feature-title mb-xs">Never cook again!</p>

@@ -12,6 +12,14 @@ $justify-items: (start, end, center, stretch);
     &-col-#{$amount} {
       grid-template-columns: repeat($amount, 1fr);
     }
+
+    @include media(tablet-small-portrait) {
+      @if $amount >= 3 {
+        &-col-#{$amount} {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
   }
 
   //*  Gaps

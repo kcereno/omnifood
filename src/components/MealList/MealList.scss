@@ -1,0 +1,8 @@
+@use "/src/sass/abstracts/abstracts" as *;
+
+@include media(tablet-small-portrait) {
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}

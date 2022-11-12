@@ -43,3 +43,13 @@
 .meal-content {
   padding-inline: spacing-size(md);
 }
+
+@include media(tablet-small-portrait) {
+  .meal-card-title {
+    font-size: font-size(md);
+  }
+
+  .meal-card-attributes span {
+    font-size: font-size(sm);
+  }
+}

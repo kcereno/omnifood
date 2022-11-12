@@ -12,7 +12,8 @@ function MealList({ types }: Props) {
       <ul className="list d-flex flex-column flex-gap-xs">
         {types.map((type) => (
           <li className="list-item d-flex align-items-center flex-gap-xs">
-            <FiCheck className="icon color-primary" /> <span>{type}</span>
+            <FiCheck className="icon color-primary" />{" "}
+            <span className="meal-attribute">{type}</span>
           </li>
         ))}
       </ul>

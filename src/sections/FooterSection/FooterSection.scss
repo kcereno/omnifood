@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   @include media(tablet-portrait) {
-    gap: spacing-size(sm);
+    gap: spacing-size(md);
   }
 }
 
@@ -81,4 +81,28 @@
   font-size: font-size(sm);
   line-height: 1.6;
   color: $color-gray-4;
+}
+
+@include media(tablet-small-portrait) {
+  .footer {
+    padding: spacing-size(lg) 0;
+  }
+
+  .contacts p {
+    font-size: font-size(xs);
+  }
+
+  //   .grid-footer {
+  //     grid-template-columns: repeat(6 1fr);
+  //   }
+  // }
+
+  // .col-nav {
+  //   grid-row: 1;
+  //   grid-column: span 2;
+  // }
+
+  // .col-logo,
+  // .col-address {
+  //   grid-column: span 3;
 }
