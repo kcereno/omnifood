@@ -28,6 +28,9 @@
     &r-#{$size} {
       margin-right: $value;
     }
+
+    @include media(mobile) {
+    }
   }
 }
 

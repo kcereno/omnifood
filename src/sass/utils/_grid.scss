@@ -20,6 +20,12 @@ $justify-items: (start, end, center, stretch);
         }
       }
     }
+
+    @include media(mobile-large) {
+      &-col-#{$amount} {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 
   //*  Gaps
@@ -41,4 +47,7 @@ $justify-items: (start, end, center, stretch);
       }
     }
   }
+}
+
+@include media(mobile-large) {
 }

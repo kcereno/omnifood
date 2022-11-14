@@ -17,3 +17,10 @@
     height: 2.1rem;
   }
 }
+
+@include media(mobile-large) {
+  .featured-logos {
+    flex-wrap: wrap;
+    gap: spacing-size(sm);
+  }
+}

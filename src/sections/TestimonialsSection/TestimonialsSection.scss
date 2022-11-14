@@ -46,3 +46,10 @@
     padding-bottom: spacing-size(md);
   }
 }
+
+@include media(mobile-large) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: spacing-size(xxxs);
+  }
+}

@@ -48,3 +48,17 @@
     z-index: -1;
   }
 }
+
+@include media(mobile-large) {
+  .step-img-box {
+    transform: translateY(spacing-size(md));
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+}

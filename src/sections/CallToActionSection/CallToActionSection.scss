@@ -86,3 +86,18 @@
     }
   }
 }
+
+@include media(mobile-large) {
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 30rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding-inline: spacing-size(md);
+  }
+}

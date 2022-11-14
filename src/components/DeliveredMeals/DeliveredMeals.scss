@@ -26,3 +26,9 @@
     }
   }
 }
+
+@include media(mobile-large) {
+  .delivered-meals {
+    flex-wrap: wrap;
+  }
+}

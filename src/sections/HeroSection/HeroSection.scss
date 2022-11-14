@@ -34,3 +34,29 @@
     width: 60%;
   }
 }
+
+@include media(mobile-large) {
+  .hero {
+    padding-inline: spacing-size(md);
+    gap: spacing-size(md);
+  }
+
+  .hero-description {
+    font-size: font-size(md);
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: font-size(sm);
+    padding: spacing-size(xs) spacing-size(xxs);
+  }
+
+  .btn-full {
+    margin-right: spacing-size(xxs);
+  }
+}

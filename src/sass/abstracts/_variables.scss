@@ -44,6 +44,7 @@ $font-sizes: (
 );
 
 $spacing-sizes: (
+  xxxs: 0.4rem,
   // best friends
   xxs: 0.8rem,
   // close friends
@@ -58,7 +59,7 @@ $spacing-sizes: (
   xl: 7.2rem,
   // stranger
   xxl: 12.8rem,
-  xxxl: 16rem
+  xxxl: 16rem,
 );
 
 // Breakpoints
@@ -71,5 +72,7 @@ $media-breakpoints: (
   // 980px
   tablet-portrait: 61.5em,
   // 768px
-  tablet-small-portrait: 48em
+  tablet-small-portrait: 48em,
+  // 550px
+  mobile-large: 34.375em
 );
