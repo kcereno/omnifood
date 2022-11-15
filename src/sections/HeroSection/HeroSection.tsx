@@ -18,7 +18,7 @@ function HeroSection() {
           </p>
 
           <div className="">
-            <a href="/" className="btn btn-full mr-sm">
+            <a href="#cta" className="btn btn-full mr-sm">
               Start Eating Well
             </a>
             <a href="/" className="btn btn-outline">

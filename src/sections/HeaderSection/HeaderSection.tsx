@@ -18,36 +18,36 @@ function HeaderSection() {
 
   return (
     <header
-      className={`header d-flex justify-content-between align-items-center bg-tint px-md  ${menuStatus}`}
+      className={`header  d-flex justify-content-between align-items-center bg-tint px-md  ${menuStatus}`}
     >
       <a href="/">
         <img src={logo} className="header-logo" alt="logo" />
       </a>
       {/* Navbar */}
-      <nav className="main-nav">
+      <nav className="main-nav ">
         <ul className="main-nav-list d-flex align-items-center flex-gap-sm">
           <li>
-            <a className="main-nav-link" href="/">
+            <a className="main-nav-link" href="#how">
               How It Works
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="/">
+            <a className="main-nav-link" href="#meals">
               Meals
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="/">
+            <a className="main-nav-link" href="#testimonials">
               Testimonials
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="/">
+            <a className="main-nav-link" href="#pricing">
               Pricing
             </a>
           </li>
           <li>
-            <a className="main-nav-link main-nav-cta bg-primary" href="/">
+            <a className="main-nav-link main-nav-cta bg-primary" href="#cta">
               Try for free
             </a>
           </li>

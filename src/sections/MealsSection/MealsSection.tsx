@@ -6,7 +6,7 @@ import MealList from "../../components/MealList/MealList";
 
 function MealsSection() {
   return (
-    <section className="section-meals py-lg">
+    <section id="meals" className="section-meals py-lg">
       <div className="container">
         <span className="subheading text-center mb-xs">Meals</span>
         <h2 className="heading-secondary text-center pb-md">

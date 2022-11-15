@@ -10,7 +10,7 @@ import Button from "../../components/UI/Button/Button";
 
 function PricingFeatureSection() {
   return (
-    <section className="pricing-section py-lg">
+    <section id="pricing" className="pricing-section py-lg">
       <div className="container">
         <span className="subheading">Pricing</span>
         <h2 className="heading-secondary mb-lg">

@@ -5,7 +5,7 @@ import image3 from "../../assets/images/app/app-screen-3.png";
 
 function HowItWorksSection() {
   return (
-    <section className="how py-lg">
+    <section id="how" className="how py-lg">
       <div className="container">
         <span className="subheading">How It Works</span>
         <h2 className="heading-secondary pb-md">
